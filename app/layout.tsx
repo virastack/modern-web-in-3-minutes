@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { cookies } from "next/headers";
+import { Header } from "@/components/Header";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -42,7 +43,10 @@ export default async function RootLayout({
         className={`${geist.variable} ${jetbrainsMono.variable} min-h-full flex flex-col antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Providers>{children}</Providers>
+          <Providers>
+            <Header />
+            {children}
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

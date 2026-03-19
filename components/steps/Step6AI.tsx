@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { MicIcon } from "lucide-react";
@@ -52,6 +52,26 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
     }, 1000);
   };
 
+  useEffect(() => {
+    const promptToType =
+      "Add a modern sticky header using shadcn/ui Navigation Menu. Include the ViraStack logo, a dropdown for 'Resources' (linking to GitHub), and a 'Restart' button. Add a GitHub icon at the end. Animate the entire header to slide down with a smooth spring effect using Framer Motion.";
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      if (currentIndex <= promptToType.length) {
+        setText(promptToType.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(interval);
+        setTimeout(() => {
+          handleSubmit({ text: promptToType });
+        }, 200);
+      }
+    }, 20);
+
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <section className="space-y-4">
       <hr className="my-10 border-gray-300 dark:border-gray-700" />
@@ -100,7 +120,11 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
         {t("p2")}{" "}
         <span
           onClick={!isCompleted ? onNext : undefined}
-          className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}
+          className={cn(
+            isCompleted
+              ? "cursor-default"
+              : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800",
+          )}
         >
           {t("button")}
         </span>
