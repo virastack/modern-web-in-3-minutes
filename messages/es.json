@@ -1,0 +1,101 @@
+{
+  "Metadata": {
+    "title": "Web Moderna en 3 Minutos",
+    "description": "Aprende los conceptos básicos del diseño web moderno paso a paso."
+  },
+  "Step0": {
+    "title": "El Contenido lo es Todo",
+    "p1": "Todo comienza con el contenido. Ya sea un producto o un portafolio; el único propósito del diseño es presentar el contenido de la mejor manera posible.",
+    "p2": "Más del 90% de la web es texto. Entonces, para embellecer este texto sin formato, ¿cuál es",
+    "button": "lo primero en lo que trabajar?"
+  },
+  "Step1": {
+    "title": "Paso 1: El Motor",
+    "p1": "En el pasado, la web era solo HTML y CSS. Hoy en día, la base de la web moderna es",
+    "and": "y",
+    "alt": "Alternativamente,",
+    "alt2": "también es una gran opción",
+    "p2": "Aunque ves esta página como HTML puro en este momento, hay un potente motor funcionando en segundo plano. Ahora, usando este poder,",
+    "button": "vamos a darle un poco de estilo a nuestra página."
+  },
+  "Step2": {
+    "title": "Paso 2: CSS",
+    "p1": "Escribir CSS solía ser tedioso. Hoy,",
+    "p1_2": "es el estándar de la industria.",
+    "p2": "Cuando acabas de hacer clic, centramos la página y le dimos un ancho máximo. ¡La legibilidad aumentó al instante!",
+    "code_comment": "El contenido va aquí",
+    "p3": "Ahora estamos usando el poder de las clases de utilidad. Pero ¿qué pasa con la",
+    "button": "tipografía?"
+  },
+  "Step3": {
+    "title": "Paso 3: Tipografía",
+    "p1": "La fuente serif predeterminada del navegador cansa la vista. Con el módulo",
+    "p1_2": "de Next.js, podemos agregar fuentes modernas con cero pérdida de rendimiento.",
+    "serif": "Times New Roman (Predeterminado)",
+    "p2": "Haz clic en los botones para ver la diferencia. En los diseños modernos, generalmente se prefiere",
+    "p2_2": ". ¿Qué pasa con nuestros",
+    "button": "componentes de interfaz de usuario?"
+  },
+  "Step4": {
+    "title": "Paso 4: Componentes UI",
+    "p1": "Diseñar componentes complejos desde cero es una pérdida de tiempo. Con",
+    "p1_2": ", puedes incluir componentes accesibles, elegantes y totalmente personalizables en tu proyecto en segundos.",
+    "html_title": "Formulario HTML Estándar:",
+    "html_label": "Nombre Completo",
+    "html_date": "Fecha de Nacimiento",
+    "html_check": "Acepto los términos y condiciones",
+    "html_button": "Guardar",
+    "shadcn_title": "Formulario Shadcn/UI:",
+    "shadcn_card_title": "Perfil de Usuario",
+    "shadcn_card_desc": "Actualiza tu información.",
+    "shadcn_label": "Nombre Completo",
+    "shadcn_placeholder": "Juan Pérez",
+    "shadcn_date": "Fecha de Nacimiento",
+    "shadcn_date_placeholder": "Seleccionar fecha",
+    "shadcn_check": "Acepto los términos y condiciones",
+    "shadcn_button": "Guardar",
+    "p2": "¡La diferencia es obvia! Además, la accesibilidad (a11y) y la navegación por teclado son una ventaja. Ahora agreguemos algo de",
+    "button": "atmósfera."
+  },
+  "Step5": {
+    "title": "Paso 5: Tema",
+    "p1": "El Modo Oscuro ya no es un lujo, es un estándar. Integrarlo en el sistema con",
+    "p1_2": "toma solo unas pocas líneas de código.",
+    "theme_title": "Cambiar Tema",
+    "theme_current": "Tema actual:",
+    "dark": "Oscuro",
+    "light": "Claro",
+    "p2": "Todo lo que queda es un poco de",
+    "button": "pulido."
+  },
+  "Step6": {
+    "title": "Paso 6: Inteligencia Artificial",
+    "p1": "El buen diseño no se trata solo de la apariencia, se trata de lo inteligente que es. Con bibliotecas como ",
+    "p1_2": ", agregar componentes de IA a tu proyecto es más fácil que nunca.",
+    "placeholder": "Pregúntame cualquier cosa...",
+    "search": "Buscar",
+    "p2": "Las interfaces del futuro ya no son estáticas, sino inteligentes e interactivas. ¡Todo se ve genial! ",
+    "button": "Veamos el resultado."
+  },
+  "Step7": {
+    "title": "¡Felicidades! 🎉",
+    "p1": "En poco tiempo, pasamos de una página HTML sin estilos a una aplicación web moderna y accesible. Alcanzar estos estándares es ahora una necesidad en la web moderna.",
+    "virastack_subtitle": "Herramientas Frontend de Alto Rendimiento",
+    "virastack_desc": "Desarrollé el ecosistema ViraStack para que puedas integrar instantáneamente lo que has aprendido en tus proyectos. En lugar de empezar desde cero, puedes usar estas herramientas de código abierto probadas.",
+    "virastack_star": "¡Puedes apoyar los proyectos dándoles una estrella (⭐) en GitHub!",
+    "nextjs_desc": "Plantilla de inicio de Next.js 16+ lista para producción, creada con Tailwind CSS 4 y TypeScript.",
+    "ai_rules_desc": "Kit de arquitectura nativa de IA y protocolos de alta disciplina para aplicaciones React modernas.",
+    "password_desc": "Hook de visibilidad de contraseña totalmente accesible y altamente personalizable para React.",
+    "input_mask_desc": "Biblioteca de enmascaramiento de entrada ligera y sin dependencias, optimizada para React Hook Form.",
+    "author_title": "👨‍💻 Ömer Gülçiçek",
+    "follow_github": "Seguir en GitHub",
+    "share_twitter": "Compartir en Twitter",
+    "share_linkedin": "Compartir en LinkedIn",
+    "share_text": "¡Aprende Web Moderna en 3 Minutos!"
+  },
+  "LanguageSwitcher": {
+    "tr": "🇹🇷 Türkçe",
+    "en": "🇬🇧 English",
+    "es": "🇪🇸 Español"
+  }
+}

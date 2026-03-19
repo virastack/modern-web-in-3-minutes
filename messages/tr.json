@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "3 Dakikada Modern Web",
+    "description": "Modern web tasarımının temellerini adım adım öğrenin."
+  },
+  "Step0": {
+    "title": "İçerik Her Şeydir",
+    "p1": "Her şey içerikle başlar. İster bir ürün, ister bir portfolyo olsun; tasarımın tek amacı içeriği en etkili şekilde sunmaktır.",
+    "p2": "Web'in %90'ı metindir. Peki, bu ham metni profesyonel bir deneyime dönüştürmek için ",
+    "button": "ilk durağımız neresi?"
+  },
+  "Step1": {
+    "title": "01: Temel",
+    "p1": "Eskiden web sadece HTML ve CSS'ten ibaretti. Bugün ise modern web'in kalbinde ",
+    "and": "ve",
+    "alt": "Alternatif olarak",
+    "alt2": "da harika bir seçenek",
+    "p2": "Şu an stilsiz bir sayfa görseniz de, arka planda Next.js'in güçlü motoru çalışıyor. Şimdi bu gücü kullanarak ",
+    "button": "sayfamızı biraz şekillendirelim."
+  },
+  "Step2": {
+    "title": "02: Yapı",
+    "p1": "Geçmişte CSS yazmak zahmetliydi; bugün ",
+    "p1_2": "endüstri standardı.",
+    "p2": "Az önce tıkladığınızda sayfayı ortaladık ve içeriğe nefes aldıracak boşluklar ekledik. Okunabilirlik anında arttı!",
+    "code_comment": "İçerik buraya gelecek",
+    "p3": "Artık atomik sınıfların hızıyla ilerliyoruz. Peki ya ",
+    "button": "yazı stili?"
+  },
+  "Step3": {
+    "title": "03: Yazı Stili",
+    "p1": "Tarayıcının varsayılan tırnaklı (serif) fontu genellikle \"bitmemiş\" bir izlenim verir. ",
+    "p1_2": "ile modern karakterleri sıfır performans kaybıyla sayfaya dahil edebiliriz.",
+    "serif": "Serif: Klasik ve ham.",
+    "geist": "Geist: Modern ve temiz.",
+    "mono": "JetBrains Mono: Teknik ve keskin.",
+    "p2": "Farkı hissetmek için fontlara tıklayın. Görünüm tamam, peki ya ",
+    "p2_2": "",
+    "button": "etkileşim?"
+  },
+  "Step4": {
+    "title": "04: Bileşenler",
+    "p1": "Sıfırdan karmaşık bileşenler tasarlamak artık zaman kaybı. ",
+    "p1_2": "ile erişilebilir ve tamamen özelleştirilebilir bileşenleri saniyeler içinde projeye dahil ediyoruz.",
+    "html_title": "Standart HTML Form",
+    "html_label": "Ad Soyad",
+    "html_date": "Doğum Tarihi",
+    "html_check": "Kullanım koşullarını kabul ediyorum",
+    "html_button": "Kaydet",
+    "shadcn_title": "shadcn/ui Form",
+    "shadcn_card_title": "Kullanıcı Profili",
+    "shadcn_card_desc": "Bilgilerinizi güncelleyin.",
+    "shadcn_label": "Ad Soyad",
+    "shadcn_placeholder": "Ömer Gülçiçek",
+    "shadcn_date": "Doğum Tarihi",
+    "shadcn_date_placeholder": "Tarih seçin",
+    "shadcn_check": "Kullanım koşullarını kabul ediyorum",
+    "shadcn_button": "Kaydet",
+    "p2": "Fark sadece estetik değil; erişilebilirlik ve klavye navigasyonu artık bir standart.\nŞimdi sahneyi biraz",
+    "button": "karartalım."
+  },
+  "Step5": {
+    "title": "05: Tema",
+    "p1": "Karanlık Mod artık bir lüks değil, beklentidir. ",
+    "p1_2": "ile kullanıcı tercihlerine veya sistem ayarlarına uyum sağlamak sadece birkaç saniyenizi alır.",
+    "theme_title": "Temayı Değiştir",
+    "theme_current": "Şu anki tema:",
+    "dark": "Karanlık",
+    "light": "Aydınlık",
+    "p2": "Görünüm kusursuzlaştı. Son dokunuş: ",
+    "button": "Ruh katmak."
+  },
+  "Step6": {
+    "title": "06: Yapay Zekâ",
+    "p1": "İyi tasarım sadece nasıl göründüğü değil, aynı zamanda ne kadar akıllı olduğudur. ",
+    "p1_2": "gibi kütüphanelerle yapay zekâ bileşenlerini projenize dahil etmek artık çok kolay.",
+    "placeholder": "Bana bir şeyler sor...",
+    "search": "Ara",
+    "p2": "Geleceğin arayüzleri artık statik değil, akıllı ve etkileşimli. Her şey yerli yerinde! ",
+    "button": "Sonuca göz atalım."
+  },
+  "Step7": {
+    "title": "Tebrikler! 🎉",
+    "p1": "Kısa sürede stilsiz bir HTML sayfasından modern ve erişilebilir bir web uygulamasına geçiş yaptık. Modern web'de bu standartları yakalamak artık bir zorunluluk.",
+    "virastack_subtitle": "Yüksek Performanslı Frontend Araçları",
+    "virastack_desc": "Öğrendiklerinizi projelerinize anında entegre edebilmeniz için ViraStack ekosistemini geliştirdim. Sıfırdan başlamak yerine, test edilmiş bu açık kaynak araçları kullanabilirsiniz.",
+    "virastack_star": "Projelere GitHub'da yıldız (⭐) vererek destek olabilirsiniz!",
+    "nextjs_desc": "Tailwind CSS 4 ve TypeScript ile geliştirilmiş, üretime hazır Next.js 16+ başlangıç şablonu.",
+    "ai_rules_desc": "Modern React uygulamaları için yapay zeka odaklı mimari kiti ve yüksek disiplinli protokoller.",
+    "password_desc": "React için tamamen erişilebilir ve son derece özelleştirilebilir şifre görünürlüğü hook'u.",
+    "input_mask_desc": "React Hook Form için optimize edilmiş, hafif ve bağımlılıksız input maskeleme kütüphanesi.",
+    "author_title": "👨‍💻 Ömer Gülçiçek",
+    "follow_github": "GitHub'da Takip Et",
+    "share_twitter": "Twitter'da Paylaş",
+    "share_linkedin": "LinkedIn'de Paylaş",
+    "share_text": "Modern Web'i 3 Dakikada Öğrenin!"
+  },
+  "LanguageSwitcher": {
+    "tr": "🇹🇷 Türkçe",
+    "en": "🇬🇧 English",
+    "es": "🇪🇸 Español"
+  }
+}
