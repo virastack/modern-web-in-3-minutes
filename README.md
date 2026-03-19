@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="./public/hero.jpg" alt="Vira Stack Modern Web in 3 Mins" />
+</div>
 
-## Getting Started
+<br />
 
-First, run the development server:
+<div align="center">
+  <img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=white" alt="shadcn/ui" />
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Modern Web in 3 Minutes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+An interactive, step-by-step journey demonstrating how modern web applications are built. From raw HTML to a fully styled, accessible, and AI-native experience using Next.js, Tailwind CSS 4, and shadcn/ui.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Explore the ViraStack Ecosystem
 
-## Learn More
+- [**AI Rules**](https://github.com/virastack/ai-rules) – Standardized AI rules for consistent code generation
+- [**Next.js Boilerplate**](https://github.com/virastack/nextjs-boilerplate) – Full-featured, scalable Next.js starter kit
+- [**Input Mask**](https://github.com/virastack/input-mask) – Lightweight, zero-dependency input masking library
+- [**Password Toggle**](https://github.com/virastack/password-toggle) – Accessible, headless password visibility component
+- [**Modern Web in 3 Mins**](https://github.com/virastack/modern-web-in-3-minutes) – Learn the standards of modern web development in 3 minutes.
 
-To learn more about Next.js, take a look at the following resources:
+... and more at [**virastack.com**](https://virastack.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Licensed under the <a href="https://github.com/virastack/modern-web-in-3-minutes/blob/main/LICENSE">MIT License</a>.
 
-## Deploy on Vercel
+## Maintainer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A project by [**Ömer Gülçiçek**](https://omergulcicek.com)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Follow Ömer Gülçiçek](https://img.shields.io/github/followers/omergulcicek?label=Follow&style=social)](https://github.com/omergulcicek)
