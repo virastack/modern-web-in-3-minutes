@@ -10,7 +10,7 @@ import Step2Foundation from "@/components/steps/Step2Foundation";
 import Step3Typography from "@/components/steps/Step3Typography";
 import Step4UIComponents from "@/components/steps/Step4UIComponents";
 import Step5Atmosphere from "@/components/steps/Step5Atmosphere";
-import Step6Polish from "@/components/steps/Step6Polish";
+import Step6AI from "@/components/steps/Step6AI";
 import Step7Final from "@/components/steps/Step7Final";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -57,13 +57,13 @@ export default function Home() {
     />,
     <Step2Foundation key="2" onNext={nextStep} isCompleted={currentStep > 2} />,
     <Step3Typography key="3" onNext={nextStep} isCompleted={currentStep > 3} />,
-    // <Step4UIComponents
-    //   key="4"
-    //   onNext={nextStep}
-    //   isCompleted={currentStep > 4}
-    // />,
+    <Step4UIComponents
+      key="4"
+      onNext={nextStep}
+      isCompleted={currentStep > 4}
+    />,
     <Step5Atmosphere key="5" onNext={nextStep} isCompleted={currentStep > 5} />,
-    <Step6Polish key="6" onNext={nextStep} isCompleted={currentStep > 6} />,
+    <Step6AI key="6" onNext={nextStep} isCompleted={currentStep > 6} />,
     <Step7Final key="7" />,
   ];
 

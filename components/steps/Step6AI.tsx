@@ -28,7 +28,7 @@ const models = [
   { id: "gpt", name: "GPT-5.4" },
 ];
 
-export default function Step6Polish({ onNext, isCompleted }: StepProps) {
+export default function Step6AI({ onNext, isCompleted }: StepProps) {
   const [text, setText] = useState("");
   const [model, setModel] = useState("auto");
   const [status, setStatus] = useState<"ready" | "submitted" | "streaming">(
@@ -56,16 +56,7 @@ export default function Step6Polish({ onNext, isCompleted }: StepProps) {
       <hr className="my-10 border-gray-300 dark:border-gray-700" />
       <h2 className="text-3xl font-bold mb-6">{t("title")}</h2>
       <p className="text-base">
-        {t("p1")}{" "}
-        <a
-          href="https://taki-ui.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-semibold underline hover:text-blue-600 transition-colors"
-        >
-          taki-ui
-        </a>{" "}
-        {t("p1_2")}
+        {t("description")}
       </p>
 
       <div className="my-6 p-6 border rounded-lg overflow-hidden relative bg-card">
@@ -111,7 +102,7 @@ export default function Step6Polish({ onNext, isCompleted }: StepProps) {
         <button
           onClick={onNext}
           disabled={isCompleted}
-          className={`underline cursor-pointer ${isCompleted ? "text-gray-500 cursor-default" : "text-blue-600 hover:text-blue-800"}`}
+          className={`underline underline-offset-2 cursor-pointer ${isCompleted ? "text-gray-500 cursor-default" : "text-blue-600 hover:text-blue-800"}`}
         >
           {t("button")}
         </button>

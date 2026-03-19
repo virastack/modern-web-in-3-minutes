@@ -10,7 +10,7 @@
     "button": "ilk durağımız neresi?"
   },
   "Step1": {
-    "title": "01: Temel",
+    "title": "Temel",
     "p1": "Eskiden web sadece HTML ve CSS'ten ibaretti. Bugün ise modern web'in kalbinde ",
     "and": "ve",
     "alt": "Alternatif olarak",
@@ -19,7 +19,7 @@
     "button": "sayfamızı biraz şekillendirelim."
   },
   "Step2": {
-    "title": "02: Yapı",
+    "title": "CSS",
     "p1": "Geçmişte CSS yazmak zahmetliydi; bugün ",
     "p1_2": "endüstri standardı.",
     "p2": "Az önce tıkladığınızda sayfayı ortaladık ve içeriğe nefes aldıracak boşluklar ekledik. Okunabilirlik anında arttı!",
@@ -28,7 +28,7 @@
     "button": "yazı stili?"
   },
   "Step3": {
-    "title": "03: Yazı Stili",
+    "title": "Yazı Stili",
     "p1": "Tarayıcının varsayılan tırnaklı (serif) fontu genellikle \"bitmemiş\" bir izlenim verir. ",
     "p1_2": "ile modern karakterleri sıfır performans kaybıyla sayfaya dahil edebiliriz.",
     "serif": "Serif: Klasik ve ham.",
@@ -39,7 +39,7 @@
     "button": "etkileşim?"
   },
   "Step4": {
-    "title": "04: Bileşenler",
+    "title": "Bileşenler",
     "p1": "Sıfırdan karmaşık bileşenler tasarlamak artık zaman kaybı. ",
     "p1_2": "ile erişilebilir ve tamamen özelleştirilebilir bileşenleri saniyeler içinde projeye dahil ediyoruz.",
     "html_title": "Standart HTML Form",
@@ -60,7 +60,7 @@
     "button": "karartalım."
   },
   "Step5": {
-    "title": "05: Tema",
+    "title": "Tema",
     "p1": "Karanlık Mod artık bir lüks değil, beklentidir. ",
     "p1_2": "ile kullanıcı tercihlerine veya sistem ayarlarına uyum sağlamak sadece birkaç saniyenizi alır.",
     "theme_title": "Temayı Değiştir",
@@ -71,9 +71,8 @@
     "button": "Ruh katmak."
   },
   "Step6": {
-    "title": "06: Yapay Zekâ",
-    "p1": "İyi tasarım sadece nasıl göründüğü değil, aynı zamanda ne kadar akıllı olduğudur. ",
-    "p1_2": "gibi kütüphanelerle yapay zekâ bileşenlerini projenize dahil etmek artık çok kolay.",
+    "title": "Yapay Zekâ",
+    "description": "Kod yazma alışkanlıklarımız değişiyor; artık her bir satırı elle girmek yerine, yapay zekâya doğru direktifleri vererek arayüzler tasarlıyoruz.",
     "placeholder": "Bana bir şeyler sor...",
     "search": "Ara",
     "p2": "Geleceğin arayüzleri artık statik değil, akıllı ve etkileşimli. Her şey yerli yerinde! ",

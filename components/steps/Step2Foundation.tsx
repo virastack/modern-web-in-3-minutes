@@ -31,7 +31,7 @@ export default function Step2Foundation({ onNext, isCompleted }: StepProps) {
       </div>
 
       <p className="text-base">
-        {t("p3")} <button onClick={onNext} disabled={isCompleted} className={`underline cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
+        {t("p3")} <button onClick={onNext} disabled={isCompleted} className={`underline underline-offset-2 cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
       </p>
     </section>
   );

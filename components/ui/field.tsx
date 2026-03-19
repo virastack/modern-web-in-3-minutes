@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import {
   composeRenderProps,
@@ -6,14 +6,14 @@ import {
   Group,
   GroupProps,
   FieldError as RACFieldError,
-} from "react-aria-components";
-import { tv, type VariantProps } from "tailwind-variants";
+} from "react-aria-components"
+import { tv, type VariantProps } from "tailwind-variants"
 
-import { cn } from "@/lib/utils";
-import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils"
+import { Label } from "@/components/ui/label"
+import { Separator } from "@/components/ui/separator"
 
-import { Description } from "./description";
+import { Description } from "./description"
 
 function FieldSet({ className, ...props }: React.ComponentProps<"fieldset">) {
   return (
@@ -22,11 +22,11 @@ function FieldSet({ className, ...props }: React.ComponentProps<"fieldset">) {
       className={cn(
         "flex flex-col gap-6",
         "has-[>[data-slot=checkbox-group]]:gap-3 has-[>[data-slot=radio-group]]:gap-3",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function FieldLegend({
@@ -42,11 +42,11 @@ function FieldLegend({
         "mb-3 font-medium",
         "data-[variant=legend]:text-base",
         "data-[variant=label]:text-sm",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function FieldGroup({ className, ...props }: GroupProps) {
@@ -55,11 +55,11 @@ function FieldGroup({ className, ...props }: GroupProps) {
       data-slot="field-group"
       className={cn(
         "group/field-group @container/field-group flex w-full flex-col gap-7 data-[slot=checkbox-group]:gap-3 [&>[data-slot=field-group]]:gap-4",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 export const fieldVariants = tv({
@@ -82,7 +82,7 @@ export const fieldVariants = tv({
   defaultVariants: {
     orientation: "vertical",
   },
-});
+})
 
 function Field({
   className,
@@ -97,7 +97,7 @@ function Field({
       className={cn(fieldVariants({ orientation }), className)}
       {...props}
     />
-  );
+  )
 }
 
 function FieldContent({ className, ...props }: React.ComponentProps<"div">) {
@@ -106,11 +106,11 @@ function FieldContent({ className, ...props }: React.ComponentProps<"div">) {
       data-slot="field-content"
       className={cn(
         "group/field-content flex flex-1 flex-col gap-1.5 leading-snug",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function FieldLabel({
@@ -124,11 +124,11 @@ function FieldLabel({
         "group/field-label peer/field-label flex w-fit gap-2 leading-snug group-data-[disabled=true]/field:opacity-50",
         "has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border [&>*]:data-[slot=field]:p-4",
         "has-data-[selected=true]:bg-primary/5 has-data-[selected=true]:border-primary dark:has-data-[selected=true]:bg-primary/10",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function FieldTitle({ className, ...props }: React.ComponentProps<"div">) {
@@ -137,11 +137,11 @@ function FieldTitle({ className, ...props }: React.ComponentProps<"div">) {
       data-slot="field-label"
       className={cn(
         "flex w-fit items-center gap-2 text-sm leading-snug font-medium group-data-[disabled=true]/field:opacity-50",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function FieldDescription({ className, ...props }: React.ComponentProps<"p">) {
@@ -152,11 +152,11 @@ function FieldDescription({ className, ...props }: React.ComponentProps<"p">) {
         "text-muted-foreground text-sm leading-normal font-normal group-has-[[data-orientation=horizontal]]/field:text-balance",
         "last:mt-0 nth-last-2:-mt-1 [[data-variant=legend]+&]:-mt-1.5",
         "[&>a:hover]:text-primary [&>a]:underline [&>a]:underline-offset-4",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function FieldSeparator({
@@ -164,7 +164,7 @@ function FieldSeparator({
   className,
   ...props
 }: React.ComponentProps<"div"> & {
-  children?: React.ReactNode;
+  children?: React.ReactNode
 }) {
   return (
     <div
@@ -172,7 +172,7 @@ function FieldSeparator({
       data-content={!!children}
       className={cn(
         "relative -my-2 h-5 text-sm group-data-[variant=outline]/field-group:-mb-2",
-        className,
+        className
       )}
       {...props}
     >
@@ -186,7 +186,7 @@ function FieldSeparator({
         </span>
       )}
     </div>
-  );
+  )
 }
 
 export function FieldError(props: FieldErrorProps) {
@@ -194,10 +194,10 @@ export function FieldError(props: FieldErrorProps) {
     <RACFieldError
       {...props}
       className={composeRenderProps(props.className, (className) =>
-        cn("text-sm text-red-600 forced-colors:text-[Mark]", className),
+        cn("text-sm text-red-600 forced-colors:text-[Mark]", className)
       )}
     />
-  );
+  )
 }
 
 export {
@@ -210,4 +210,4 @@ export {
   FieldSet,
   FieldContent,
   FieldTitle,
-};
+}

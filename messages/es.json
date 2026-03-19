@@ -10,7 +10,7 @@
     "button": "lo primero en lo que trabajar?"
   },
   "Step1": {
-    "title": "Paso 1: El Motor",
+    "title": "El Motor",
     "p1": "En el pasado, la web era solo HTML y CSS. Hoy en día, la base de la web moderna es",
     "and": "y",
     "alt": "Alternativamente,",
@@ -19,7 +19,7 @@
     "button": "vamos a darle un poco de estilo a nuestra página."
   },
   "Step2": {
-    "title": "Paso 2: CSS",
+    "title": "CSS",
     "p1": "Escribir CSS solía ser tedioso. Hoy,",
     "p1_2": "es el estándar de la industria.",
     "p2": "Cuando acabas de hacer clic, centramos la página y le dimos un ancho máximo. ¡La legibilidad aumentó al instante!",
@@ -28,7 +28,7 @@
     "button": "tipografía?"
   },
   "Step3": {
-    "title": "Paso 3: Tipografía",
+    "title": "Tipografía",
     "p1": "La fuente serif predeterminada del navegador cansa la vista. Con el módulo",
     "p1_2": "de Next.js, podemos agregar fuentes modernas con cero pérdida de rendimiento.",
     "serif": "Times New Roman (Predeterminado)",
@@ -37,7 +37,7 @@
     "button": "componentes de interfaz de usuario?"
   },
   "Step4": {
-    "title": "Paso 4: Componentes UI",
+    "title": "Componentes UI",
     "p1": "Diseñar componentes complejos desde cero es una pérdida de tiempo. Con",
     "p1_2": ", puedes incluir componentes accesibles, elegantes y totalmente personalizables en tu proyecto en segundos.",
     "html_title": "Formulario HTML Estándar:",
@@ -58,7 +58,7 @@
     "button": "atmósfera."
   },
   "Step5": {
-    "title": "Paso 5: Tema",
+    "title": "Tema",
     "p1": "El Modo Oscuro ya no es un lujo, es un estándar. Integrarlo en el sistema con",
     "p1_2": "toma solo unas pocas líneas de código.",
     "theme_title": "Cambiar Tema",
@@ -69,9 +69,8 @@
     "button": "pulido."
   },
   "Step6": {
-    "title": "Paso 6: Inteligencia Artificial",
-    "p1": "El buen diseño no se trata solo de la apariencia, se trata de lo inteligente que es. Con bibliotecas como ",
-    "p1_2": ", agregar componentes de IA a tu proyecto es más fácil que nunca.",
+    "title": "Inteligencia Artificial",
+    "description": "Nuestros hábitos de programación están cambiando; en lugar de ingresar cada línea manualmente, ahora diseñamos interfaces vivas dando las directivas correctas a la inteligencia artificial.",
     "placeholder": "Pregúntame cualquier cosa...",
     "search": "Buscar",
     "p2": "Las interfaces del futuro ya no son estáticas, sino inteligentes e interactivas. ¡Todo se ve genial! ",

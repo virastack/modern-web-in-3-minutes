@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import * as React from "react";
-import { composeRenderProps, Group, GroupProps } from "react-aria-components";
-import { tv, type VariantProps } from "tailwind-variants";
+import * as React from "react"
+import { composeRenderProps, Group, GroupProps } from "react-aria-components"
+import { tv, type VariantProps } from "tailwind-variants"
 
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
 export function inputGroupStyles(props: React.ComponentProps<"div">) {
   return cn(
@@ -28,8 +28,8 @@ export function inputGroupStyles(props: React.ComponentProps<"div">) {
     // Error state.
     "has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-[[data-slot][aria-invalid=true]]:border-destructive dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40",
 
-    props.className,
-  );
+    props.className
+  )
 }
 
 function InputGroup({ className, ...props }: GroupProps) {
@@ -37,11 +37,11 @@ function InputGroup({ className, ...props }: GroupProps) {
     <Group
       data-slot="input-group"
       className={composeRenderProps(className, (className, renderProps) =>
-        inputGroupStyles({ ...renderProps, className }),
+        inputGroupStyles({ ...renderProps, className })
       )}
       {...props}
     />
-  );
+  )
 }
 
 const inputGroupAddonVariants = tv({
@@ -61,7 +61,7 @@ const inputGroupAddonVariants = tv({
   defaultVariants: {
     align: "inline-start",
   },
-});
+})
 
 function InputGroupAddon({
   className,
@@ -76,13 +76,13 @@ function InputGroupAddon({
       className={inputGroupAddonVariants({ align, className })}
       onClick={(e) => {
         if ((e.target as HTMLElement).closest("button")) {
-          return;
+          return
         }
-        e.currentTarget.parentElement?.querySelector("input")?.focus();
+        e.currentTarget.parentElement?.querySelector("input")?.focus()
       }}
       {...props}
     />
-  );
+  )
 }
 
 const inputGroupButtonVariants = tv({
@@ -98,7 +98,7 @@ const inputGroupButtonVariants = tv({
   defaultVariants: {
     size: "xs",
   },
-});
+})
 
 function InputGroupButton({
   className,
@@ -116,7 +116,7 @@ function InputGroupButton({
       className={inputGroupButtonVariants({ size, className })}
       {...props}
     />
-  );
+  )
 }
 
 function InputGroupText({ className, ...props }: React.ComponentProps<"span">) {
@@ -124,11 +124,11 @@ function InputGroupText({ className, ...props }: React.ComponentProps<"span">) {
     <span
       className={cn(
         "text-muted-foreground flex items-center gap-2 text-sm [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 export const inputGroupInputStyles = tv({
@@ -141,7 +141,7 @@ export const inputGroupInputStyles = tv({
       true: "ring-0 border-0",
     },
   },
-});
+})
 
 function InputGroupInput({
   className,
@@ -151,11 +151,11 @@ function InputGroupInput({
     <Input
       data-slot="input-group-control"
       className={composeRenderProps(className, (className, renderProps) =>
-        inputGroupInputStyles({ ...renderProps, className }),
+        inputGroupInputStyles({ ...renderProps, className })
       )}
       {...props}
     />
-  );
+  )
 }
 
 function InputGroupTextarea({
@@ -168,11 +168,11 @@ function InputGroupTextarea({
       className={cn(
         "flex-1 resize-none rounded-none border-0 bg-transparent py-3 shadow-none focus-visible:ring-0 dark:bg-transparent",
         "focus:ring-0 focus-visible:ring-0",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 export {
@@ -182,4 +182,4 @@ export {
   InputGroupText,
   InputGroupInput,
   InputGroupTextarea,
-};
+}

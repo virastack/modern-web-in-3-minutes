@@ -19,7 +19,7 @@ import {
 
 import { cn } from "@/lib/utils";
 import { dropdownItemStyles } from "./list-box";
-import { Popover, PopoverProps } from "./popover";
+import { Popover, PopoverProps } from "./popover-prompt";
 
 interface MenuProps<T> extends AriaMenuProps<T> {
   placement?: PopoverProps["placement"];

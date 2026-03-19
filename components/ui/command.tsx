@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
-import * as React from "react";
-import { SearchIcon } from "lucide-react";
+import * as React from "react"
+import { SearchIcon } from "lucide-react"
 import {
   Autocomplete,
   Collection,
@@ -19,43 +19,43 @@ import {
   Virtualizer,
   type SeparatorProps,
   type TextFieldProps,
-} from "react-aria-components";
+} from "react-aria-components"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 import {
   Dialog,
   DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { Modal } from "@/components/ui/modal";
+} from "@/components/ui/dialog"
+import { Modal } from "@/components/ui/modal"
 
-import { ListBox, ListBoxItem } from "./list-box";
+import { ListBox, ListBoxItem } from "./list-box"
 
 interface CommandContextValue {
-  filter: (string: string, substring: string) => boolean;
-  value?: string;
-  onValueChange?: (value: string) => void;
+  filter: (string: string, substring: string) => boolean
+  value?: string
+  onValueChange?: (value: string) => void
 }
 
-const CommandContext = React.createContext<CommandContextValue | null>(null);
+const CommandContext = React.createContext<CommandContextValue | null>(null)
 
 function useCommandContext() {
-  const context = React.useContext(CommandContext);
+  const context = React.useContext(CommandContext)
   if (!context) {
     throw new Error(
-      "Command components must be used within a Command component",
-    );
+      "Command components must be used within a Command component"
+    )
   }
-  return context;
+  return context
 }
 
 interface CommandProps extends React.HTMLAttributes<HTMLDivElement> {
-  value?: string;
-  onValueChange?: (value: string) => void;
-  filter?: CommandContextValue["filter"];
-  filterBehavior?: "contains" | "startsWith";
+  value?: string
+  onValueChange?: (value: string) => void
+  filter?: CommandContextValue["filter"]
+  filterBehavior?: "contains" | "startsWith"
 }
 
 function Command({
@@ -66,13 +66,13 @@ function Command({
   children,
   ...props
 }: CommandProps) {
-  const { contains, startsWith } = useFilter({ sensitivity: "base" });
-  const filter = filterBehavior === "contains" ? contains : startsWith;
+  const { contains, startsWith } = useFilter({ sensitivity: "base" })
+  const filter = filterBehavior === "contains" ? contains : startsWith
 
   const contextValue = React.useMemo(
     () => ({ filter, value, onValueChange }),
-    [filter, value, onValueChange],
-  );
+    [filter, value, onValueChange]
+  )
 
   return (
     <CommandContext.Provider value={contextValue}>
@@ -80,14 +80,14 @@ function Command({
         data-slot="command"
         className={cn(
           "bg-popover text-popover-foreground flex h-full w-full flex-col overflow-hidden rounded-md",
-          className,
+          className
         )}
         {...props}
       >
         <Autocomplete filter={filter}>{children}</Autocomplete>
       </div>
     </CommandContext.Provider>
-  );
+  )
 }
 
 function CommandDialog({
@@ -98,10 +98,10 @@ function CommandDialog({
   showCloseButton = true,
   ...props
 }: React.ComponentProps<typeof DialogTrigger> & {
-  title?: string;
-  description?: string;
-  className?: string;
-  showCloseButton?: boolean;
+  title?: string
+  description?: string
+  className?: string
+  showCloseButton?: boolean
 }) {
   return (
     <DialogTrigger {...props}>
@@ -117,15 +117,14 @@ function CommandDialog({
         </Dialog>
       </Modal>
     </DialogTrigger>
-  );
+  )
 }
 
 interface CommandInputProps
-  extends
-    Omit<TextFieldProps, "children">,
+  extends Omit<TextFieldProps, "children">,
     Omit<React.ComponentProps<typeof Input>, "className"> {
-  inputClassName?: string;
-  wrapperClassName?: string;
+  inputClassName?: string
+  wrapperClassName?: string
 }
 
 function CommandInput({
@@ -134,14 +133,14 @@ function CommandInput({
   placeholder = "Type a command or search...",
   ...props
 }: CommandInputProps) {
-  const { filter } = useCommandContext();
+  const { filter } = useCommandContext()
 
   return (
     <TextField
       aria-label="Search commands"
       className={cn(
         "flex h-9 items-center gap-2 border-b px-3",
-        wrapperClassName,
+        wrapperClassName
       )}
       data-slot="command-input-wrapper"
       {...props}
@@ -151,17 +150,17 @@ function CommandInput({
         placeholder={placeholder}
         className={cn(
           "placeholder:text-muted-foreground flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-hidden disabled:cursor-not-allowed disabled:opacity-50",
-          inputClassName,
+          inputClassName
         )}
         data-slot="command-input"
       />
     </TextField>
-  );
+  )
 }
 
 interface CommandListProps extends React.ComponentProps<typeof Menu> {
-  emptyMessage?: React.ReactNode;
-  enableVirtualization?: boolean;
+  emptyMessage?: React.ReactNode
+  enableVirtualization?: boolean
 }
 
 function CommandList({
@@ -177,7 +176,7 @@ function CommandList({
         data-slot="command-list"
         className={cn(
           "max-h-[300px] scroll-py-1 overflow-x-hidden overflow-y-auto outline-hidden",
-          className,
+          className
         )}
         renderEmptyState={() =>
           emptyMessage && <CommandEmpty>{emptyMessage}</CommandEmpty>
@@ -186,7 +185,7 @@ function CommandList({
       >
         <Collection>{children}</Collection>
       </Menu>
-    );
+    )
   }
 
   return (
@@ -203,7 +202,7 @@ function CommandList({
         data-slot="command-list"
         className={cn(
           "max-h-[300px] scroll-py-1 overflow-x-hidden overflow-y-auto outline-hidden",
-          className,
+          className
         )}
         renderEmptyState={() =>
           emptyMessage && <CommandEmpty>{emptyMessage}</CommandEmpty>
@@ -213,12 +212,12 @@ function CommandList({
         <Collection>{children}</Collection>
       </Menu>
     </Virtualizer>
-  );
+  )
 }
 
 interface CommandEmptyProps {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }
 
 function CommandEmpty({ children, className }: CommandEmptyProps) {
@@ -229,15 +228,16 @@ function CommandEmpty({ children, className }: CommandEmptyProps) {
     >
       {children}
     </div>
-  );
+  )
 }
 
-interface CommandGroupProps extends Omit<
-  React.ComponentProps<typeof ListBoxSection<object>>,
-  "children"
-> {
-  heading?: string;
-  children: React.ReactNode;
+interface CommandGroupProps
+  extends Omit<
+    React.ComponentProps<typeof ListBoxSection<object>>,
+    "children"
+  > {
+  heading?: string
+  children: React.ReactNode
 }
 
 function CommandGroup({
@@ -262,7 +262,7 @@ function CommandGroup({
       )}
       <Collection>{children}</Collection>
     </MenuSection>
-  );
+  )
 }
 
 function CommandSeparator({ className, ...props }: SeparatorProps) {
@@ -272,14 +272,12 @@ function CommandSeparator({ className, ...props }: SeparatorProps) {
       className={cn("bg-border -mx-1 h-px", className)}
       {...props}
     />
-  );
+  )
 }
 
-interface CommandItemProps extends Omit<
-  React.ComponentProps<typeof MenuItem>,
-  "children"
-> {
-  children: React.ReactNode;
+interface CommandItemProps
+  extends Omit<React.ComponentProps<typeof MenuItem>, "children"> {
+  children: React.ReactNode
 }
 
 function CommandItem({ className, children, ...props }: CommandItemProps) {
@@ -288,13 +286,13 @@ function CommandItem({ className, children, ...props }: CommandItemProps) {
       data-slot="command-item"
       className={cn(
         "focus:bg-accent focus:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-        className,
+        className
       )}
       {...props}
     >
       {children}
     </MenuItem>
-  );
+  )
 }
 
 function CommandShortcut({
@@ -306,11 +304,11 @@ function CommandShortcut({
       data-slot="command-shortcut"
       className={cn(
         "text-muted-foreground ml-auto text-xs tracking-widest",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
 export {
@@ -323,4 +321,4 @@ export {
   CommandItem,
   CommandShortcut,
   CommandSeparator,
-};
+}

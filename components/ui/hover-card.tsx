@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 import {
   Tooltip as AriaTooltip,
   TooltipTrigger as AriaTooltipTrigger,
   type TooltipProps as AriaTooltipProps,
   type TooltipTriggerComponentProps,
-} from "react-aria-components";
+} from "react-aria-components"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 function HoverCard({
   delay = 0,
@@ -22,11 +22,11 @@ function HoverCard({
       closeDelay={closeDelay}
       {...props}
     />
-  );
+  )
 }
 
 interface HoverCardContentProps extends AriaTooltipProps {
-  className?: string;
+  className?: string
 }
 
 function HoverCardContent({
@@ -40,11 +40,11 @@ function HoverCardContent({
       offset={offset}
       className={cn(
         "bg-popover text-popover-foreground data-[entering]:animate-in data-[exiting]:animate-out data-[exiting]:fade-out-0 data-[entering]:fade-in-0 data-[exiting]:zoom-out-95 data-[entering]:zoom-in-95 data-[placement=bottom]:slide-in-from-top-2 data-[placement=left]:slide-in-from-right-2 data-[placement=right]:slide-in-from-left-2 data-[placement=top]:slide-in-from-bottom-2 z-50 w-64 rounded-md border p-4 shadow-md outline-hidden",
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }
 
-export { HoverCard, HoverCardContent };
+export { HoverCard, HoverCardContent }

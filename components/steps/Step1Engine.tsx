@@ -41,7 +41,7 @@ export default function Step1Engine({ onNext, isCompleted, isStyled }: StepProps
         <em className="flex items-center gap-2 mt-2 text-muted-foreground"> ({t("alt")} <TanStack className="w-5 h-5" /> <a href="https://tanstack.com/start" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">TanStack Start</a> {t("alt2")}).</em>
       </p>
       <p className="text-base">
-        {t("p2")} <button onClick={onNext} disabled={isCompleted} className={`underline cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
+        {t("p2")} <button onClick={onNext} disabled={isCompleted} className={`underline underline-offset-2 cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
       </p>
     </section>
   );

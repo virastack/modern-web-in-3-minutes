@@ -20,7 +20,7 @@ import {
   DropdownSectionProps,
   ListBox,
 } from "./list-box";
-import { Popover } from "./popover";
+import { Popover } from "./popover-prompt";
 
 export interface SelectProps<T extends object> extends Omit<
   AriaSelectProps<T>,

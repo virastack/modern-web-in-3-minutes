@@ -13,7 +13,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Calendar } from "@/components/ui/calendar";
-import { Popover } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@/components/ui/popover";
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { tr, enUS } from "date-fns/locale";
@@ -160,7 +164,7 @@ export default function Step4UIComponents({ onNext, isCompleted }: StepProps) {
           {t("p2")}{" "}
           <button
             onClick={onNext}
-            className="underline cursor-pointer text-blue-600 hover:text-blue-800"
+            className="underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800"
           >
             {t("button")}
           </button>
@@ -169,7 +173,7 @@ export default function Step4UIComponents({ onNext, isCompleted }: StepProps) {
       {isCompleted && (
         <p className="text-base mt-6 whitespace-pre-wrap">
           {t("p2")}{" "}
-          <button disabled className="underline cursor-default text-gray-500">
+          <button disabled className="underline underline-offset-2 cursor-default text-gray-500">
             {t("button")}
           </button>
         </p>

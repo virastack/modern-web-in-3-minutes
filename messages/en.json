@@ -10,7 +10,7 @@
     "button": "first thing to work on?"
   },
   "Step1": {
-    "title": "Step 1: The Engine",
+    "title": "The Engine",
     "p1": "In the past, the web was just HTML and CSS. Today, the foundation of the modern web is",
     "and": "and",
     "alt": "Alternatively,",
@@ -19,7 +19,7 @@
     "button": "let's style our page a bit."
   },
   "Step2": {
-    "title": "Step 2: CSS",
+    "title": "CSS",
     "p1": "Writing CSS used to be tedious. Today,",
     "p1_2": "is the industry standard.",
     "p2": "When you just clicked, we centered the page and gave it a maximum width. Readability increased instantly!",
@@ -28,7 +28,7 @@
     "button": "typography?"
   },
   "Step3": {
-    "title": "Step 3: Typography",
+    "title": "Typography",
     "p1": "The browser's default serif font strains the eyes. With Next.js's",
     "p1_2": "module, we can add modern fonts with zero performance loss.",
     "serif": "Times New Roman (Default)",
@@ -37,7 +37,7 @@
     "button": "UI components?"
   },
   "Step4": {
-    "title": "Step 4: UI Components",
+    "title": "UI Components",
     "p1": "Designing complex components from scratch is a waste of time. With",
     "p1_2": ", you can include accessible, stylish, and fully customizable components into your project in seconds.",
     "html_title": "Standard HTML Form:",
@@ -58,7 +58,7 @@
     "button": "atmosphere."
   },
   "Step5": {
-    "title": "Step 5: Theme",
+    "title": "Theme",
     "p1": "Dark Mode is no longer a luxury, it's a standard. Integrating it into the system with",
     "p1_2": "takes only a few lines of code.",
     "theme_title": "Toggle Theme",
@@ -69,9 +69,8 @@
     "button": "polishing."
   },
   "Step6": {
-    "title": "Step 6: Artificial Intelligence",
-    "p1": "Good design is not just about looks, it's about how smart it is. With libraries like ",
-    "p1_2": ", adding AI components to your project is easier than ever.",
+    "title": "Artificial Intelligence",
+    "description": "Our coding habits are changing; instead of entering every line manually, we now design living interfaces by giving the right directives to artificial intelligence.",
     "placeholder": "Ask me anything...",
     "search": "Search",
     "p2": "The interfaces of the future are no longer static, but smart and interactive. Everything looks great! ",

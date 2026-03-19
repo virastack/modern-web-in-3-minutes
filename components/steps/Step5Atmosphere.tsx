@@ -43,7 +43,7 @@ export default function Step5Atmosphere({ onNext, isCompleted }: StepProps) {
       )}
 
       <p className="text-base mt-6">
-        {t("p2")} <button onClick={onNext} disabled={isCompleted} className={`underline cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
+        {t("p2")} <button onClick={onNext} disabled={isCompleted} className={`underline underline-offset-2 cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
       </p>
     </section>
   );

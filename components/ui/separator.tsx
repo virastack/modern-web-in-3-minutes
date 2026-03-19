@@ -1,15 +1,15 @@
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 import {
   Separator as RACSeparator,
   type SeparatorProps,
-} from "react-aria-components";
+} from "react-aria-components"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 export function Separator(props: SeparatorProps) {
-  const { orientation = "horizontal", className, ...rest } = props;
+  const { orientation = "horizontal", className, ...rest } = props
 
   return (
     <RACSeparator
@@ -18,11 +18,11 @@ export function Separator(props: SeparatorProps) {
       className={cn(
         "bg-border shrink-0",
         orientation === "horizontal" ? "h-px w-full" : "h-full w-px",
-        className,
+        className
       )}
       {...rest}
     />
-  );
+  )
 }
 
-Separator.displayName = "Separator";
+Separator.displayName = "Separator"
