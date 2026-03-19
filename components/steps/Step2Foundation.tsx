@@ -1,5 +1,6 @@
 import { TailwindCSS } from "@/components/icons/tailwind";
 import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
 
 interface StepProps {
   onNext: () => void;
@@ -31,7 +32,7 @@ export default function Step2Foundation({ onNext, isCompleted }: StepProps) {
       </div>
 
       <p className="text-base">
-        {t("p3")} <button onClick={onNext} disabled={isCompleted} className={`underline underline-offset-2 cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
+        {t("p3")} <span onClick={!isCompleted ? onNext : undefined} className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}>{t("button")}</span>
       </p>
     </section>
   );

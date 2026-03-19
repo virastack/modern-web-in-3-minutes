@@ -23,6 +23,7 @@ import { format } from "date-fns";
 import { tr, enUS } from "date-fns/locale";
 import { shadcnui as ShadcnIcon } from "@/components/icons/shadcn";
 import { useTranslations, useLocale } from "next-intl";
+import { cn } from "@/lib/utils";
 
 interface StepProps {
   onNext: () => void;
@@ -159,25 +160,15 @@ export default function Step4UIComponents({ onNext, isCompleted }: StepProps) {
         </div>
       </div>
 
-      {!isCompleted && (
-        <p className="text-base mt-6 whitespace-pre-wrap">
-          {t("p2")}{" "}
-          <button
-            onClick={onNext}
-            className="underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800"
-          >
-            {t("button")}
-          </button>
-        </p>
-      )}
-      {isCompleted && (
-        <p className="text-base mt-6 whitespace-pre-wrap">
-          {t("p2")}{" "}
-          <button disabled className="underline underline-offset-2 cursor-default text-gray-500">
-            {t("button")}
-          </button>
-        </p>
-      )}
+      <p className="text-base mt-6 whitespace-pre-wrap">
+        {t("p2")}{" "}
+        <span
+          onClick={!isCompleted ? onNext : undefined}
+          className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}
+        >
+          {t("button")}
+        </span>
+      </p>
     </section>
   );
 }

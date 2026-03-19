@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
 
 interface StepProps {
   onNext: () => void;
@@ -17,7 +18,7 @@ export default function Step0Content({ onNext, isCompleted, isStyled }: StepProp
           {t("p1")}
         </p>
         <p style={{ margin: '1em 0' }}>
-          {t("p2")} <button onClick={onNext} disabled={isCompleted} style={{ color: isCompleted ? 'purple' : 'blue', textDecoration: 'underline', background: 'none', border: 'none', padding: 0, font: 'inherit', cursor: isCompleted ? 'default' : 'pointer' }}>{t("button")}</button>
+          {t("p2")} <span onClick={!isCompleted ? onNext : undefined} style={isCompleted ? { cursor: 'default' } : { color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>{t("button")}</span>
         </p>
       </section>
     );
@@ -30,7 +31,7 @@ export default function Step0Content({ onNext, isCompleted, isStyled }: StepProp
         {t("p1")}
       </p>
       <p className="text-base">
-        {t("p2")} <button onClick={onNext} disabled={isCompleted} className={`underline underline-offset-2 cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
+        {t("p2")} <span onClick={!isCompleted ? onNext : undefined} className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}>{t("button")}</span>
       </p>
     </section>
   );

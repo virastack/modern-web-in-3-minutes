@@ -2,6 +2,7 @@ import { React as ReactIcon } from "@/components/icons/react";
 import { Nextjs } from "@/components/icons/nextjs";
 import { TanStack } from "@/components/icons/tanstack";
 import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
 
 interface StepProps {
   onNext: () => void;
@@ -24,7 +25,7 @@ export default function Step1Engine({ onNext, isCompleted, isStyled }: StepProps
           <em> ({t("alt")} <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}><TanStack style={{ width: '16px', height: '16px' }} /> <a href="https://tanstack.com/start" target="_blank" rel="noopener noreferrer" style={{ color: 'blue', textDecoration: 'underline' }}>TanStack Start</a></span> {t("alt2")}).</em>
         </p>
         <p style={{ margin: '1em 0' }}>
-          {t("p2")} <button onClick={onNext} disabled={isCompleted} style={{ color: isCompleted ? 'purple' : 'blue', textDecoration: 'underline', background: 'none', border: 'none', padding: 0, font: 'inherit', cursor: isCompleted ? 'default' : 'pointer' }}>{t("button")}</button>
+          {t("p2")} <span onClick={!isCompleted ? onNext : undefined} style={isCompleted ? { cursor: 'default' } : { color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>{t("button")}</span>
         </p>
       </section>
     );
@@ -41,7 +42,7 @@ export default function Step1Engine({ onNext, isCompleted, isStyled }: StepProps
         <em className="flex items-center gap-2 mt-2 text-muted-foreground"> ({t("alt")} <TanStack className="w-5 h-5" /> <a href="https://tanstack.com/start" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">TanStack Start</a> {t("alt2")}).</em>
       </p>
       <p className="text-base">
-        {t("p2")} <button onClick={onNext} disabled={isCompleted} className={`underline underline-offset-2 cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
+        {t("p2")} <span onClick={!isCompleted ? onNext : undefined} className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}>{t("button")}</span>
       </p>
     </section>
   );

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
 
 interface StepProps {
   onNext: () => void;
@@ -43,7 +44,7 @@ export default function Step5Atmosphere({ onNext, isCompleted }: StepProps) {
       )}
 
       <p className="text-base mt-6">
-        {t("p2")} <button onClick={onNext} disabled={isCompleted} className={`underline underline-offset-2 cursor-pointer ${isCompleted ? 'text-gray-500 cursor-default' : 'text-blue-600 hover:text-blue-800'}`}>{t("button")}</button>
+        {t("p2")} <span onClick={!isCompleted ? onNext : undefined} className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}>{t("button")}</span>
       </p>
     </section>
   );
