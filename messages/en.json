@@ -6,41 +6,44 @@
   "Step0": {
     "title": "Content is Everything",
     "p1": "Everything starts with content. Whether it's a product or a portfolio; the sole purpose of design is to present the content in the best possible way.",
-    "p2": "More than 90% of the web is text. So, to make this raw text beautiful, what is the",
+    "p2": "More than 90% of the web is text. So, to make this raw text beautiful, what is the ",
     "button": "first thing to work on?"
   },
   "Step1": {
     "title": "The Engine",
-    "p1": "In the past, the web was just HTML and CSS. Today, the foundation of the modern web is",
+    "p1": "In the past, the web was just HTML and CSS. Today, the foundation of the modern web is ",
     "and": "and",
-    "alt": "Alternatively,",
+    "alt": "Alternatively, ",
     "alt2": "is also a great choice",
-    "p2": "Even though you see this page as raw HTML right now, there is a powerful engine running in the background. Now, using this power,",
+    "p2": "Even though you see this page as raw HTML right now, there is a powerful engine running in the background. Now, using this power, ",
     "button": "let's style our page a bit."
   },
   "Step2": {
     "title": "CSS",
-    "p1": "Writing CSS used to be tedious. Today,",
+    "p1": "Writing CSS used to be tedious. Today, ",
     "p1_2": "is the industry standard.",
     "p2": "When you just clicked, we centered the page and gave it a maximum width. Readability increased instantly!",
     "code_comment": "Content goes here",
-    "p3": "We are now using the power of utility classes. But what about",
+    "p3": "We are now using the power of utility classes. But what about ",
     "button": "typography?"
   },
   "Step3": {
     "title": "Typography",
-    "p1": "The browser's default serif font strains the eyes. With Next.js's",
+    "p1": "The browser's default serif font strains the eyes. With Next.js's ",
     "p1_2": "module, we can add modern fonts with zero performance loss.",
     "serif": "Times New Roman (Default)",
-    "p2": "Click the buttons to see the difference. In modern designs,",
+    "geist": "Geist: Modern and clean.",
+    "mono": "JetBrains Mono: Technical and sharp.",
+    "p2": "Click the buttons to see the difference. In modern designs, ",
     "p2_2": "is usually preferred. What about our",
     "button": "UI components?"
   },
   "Step4": {
     "title": "UI Components",
-    "p1": "Designing complex components from scratch is a waste of time. With",
+    "p1": "Designing complex components from scratch is a waste of time. With ",
     "p1_2": ", you can include accessible, stylish, and fully customizable components into your project in seconds.",
     "html_title": "Standard HTML Form:",
+    "html_card_title": "Profile",
     "html_label": "Full Name",
     "html_date": "Date of Birth",
     "html_check": "I accept the terms and conditions",
@@ -54,33 +57,34 @@
     "shadcn_date_placeholder": "Pick a date",
     "shadcn_check": "I accept the terms and conditions",
     "shadcn_button": "Save",
-    "p2": "The difference is obvious! Plus, accessibility (a11y) and keyboard navigation are a bonus. Now let's add some",
+    "p2": "The difference is obvious! Plus, accessibility (a11y) and keyboard navigation are a bonus. Now let's add some ",
     "button": "atmosphere."
   },
   "Step5": {
     "title": "Theme",
-    "p1": "Dark Mode is no longer a luxury, it's a standard. Integrating it into the system with",
+    "p1": "Dark Mode is no longer a luxury, it's a standard. Integrating it into the system with ",
     "p1_2": "takes only a few lines of code.",
     "theme_title": "Toggle Theme",
     "theme_current": "Current theme:",
     "dark": "Dark",
     "light": "Light",
-    "p2": "All that's left is a little",
-    "button": "polishing."
+    "p2": "All that's left is a little ",
+    "button": "touching the future."
   },
   "Step6": {
     "title": "Artificial Intelligence",
     "description": "Our coding habits are changing; instead of entering every line manually, we now design living interfaces by giving the right directives to artificial intelligence.",
     "placeholder": "Ask me anything...",
     "search": "Search",
+    "prompt": "Add a minimalist sticky header using shadcn/ui Navigation Menu. Place the ViraStack logo and name on the left. Next to it, add 'Ömer Gülçiçek' as a dropdown trigger for personal links. Animate the header to slide down with a Framer Motion spring effect on entry.",
     "p2": "The interfaces of the future are no longer static, but smart and interactive. Everything looks great! ",
     "button": "Let's check the result."
   },
   "Step7": {
     "title": "Congratulations! 🎉",
-    "p1": "In a short time, we transitioned from an unstyled HTML page to a modern and accessible web application. Catching up with these standards is now a necessity in the modern web.",
+    "p1": "From a static structure; we have reached a living, modern experience with the power of Next.js, the speed of Tailwind 4, and an AI-Native architecture.",
     "virastack_subtitle": "High-Performance Frontend Tools",
-    "virastack_desc": "I developed the ViraStack ecosystem so you can instantly integrate what you've learned into your projects. Instead of starting from scratch, you can use these tested open-source tools.",
+    "virastack_desc": "I created the ViraStack ecosystem so you can instantly integrate all these modern standards into your projects. Instead of starting from scratch, take your development process to the next level with open-source tools.",
     "virastack_star": "You can support the projects by giving them a star (⭐) on GitHub!",
     "nextjs_desc": "Production-ready Next.js 16+ starter template built with Tailwind CSS 4 and TypeScript.",
     "ai_rules_desc": "AI-native architecture kit and high-discipline protocols for modern React applications.",
@@ -95,6 +99,8 @@
   "LanguageSwitcher": {
     "tr": "🇹🇷 Türkçe",
     "en": "🇬🇧 English",
-    "es": "🇪🇸 Español"
+    "es": "🇪🇸 Español",
+    "de": "🇩🇪 Deutsch",
+    "pt": "🇵🇹 Português"
   }
 }

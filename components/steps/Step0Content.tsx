@@ -25,12 +25,12 @@ export default function Step0Content({ onNext, isCompleted, isStyled }: StepProp
   }
 
   return (
-    <section className="space-y-4">
-      <h1 className="text-4xl font-bold mb-6">{t("title")}</h1>
-      <p className="text-base">
+    <section className="space-y-4 mb-20">
+      <h1 className="text-3xl font-bold mb-6 flex items-center gap-3">{t("title")}</h1>
+      <p className="text-lg text-muted-foreground">
         {t("p1")}
       </p>
-      <p className="text-base">
+      <p className="text-lg text-muted-foreground">
         {t("p2")} <span onClick={!isCompleted ? onNext : undefined} className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}>{t("button")}</span>
       </p>
     </section>

@@ -1,0 +1,106 @@
+{
+  "Metadata": {
+    "title": "Modernes Web in 3 Minuten",
+    "description": "Lernen Sie die Grundlagen des modernen Webdesigns Schritt für Schritt."
+  },
+  "Step0": {
+    "title": "Inhalt ist Alles",
+    "p1": "Alles beginnt mit dem Inhalt. Ob es ein Produkt oder ein Portfolio ist; der einzige Zweck des Designs ist es, den Inhalt bestmöglich zu präsentieren.",
+    "p2": "Mehr als 90% des Webs besteht aus Text. Um diesen rohen Text schön zu machen, was ist ",
+    "button": "das Erste, woran man arbeiten sollte?"
+  },
+  "Step1": {
+    "title": "Der Motor",
+    "p1": "Früher bestand das Web nur aus HTML und CSS. Heute ist die Grundlage des modernen Webs ",
+    "and": "und",
+    "alt": "Alternativ ist ",
+    "alt2": "auch eine großartige Wahl",
+    "p2": "Auch wenn Sie diese Seite gerade als reines HTML sehen, läuft im Hintergrund ein leistungsstarker Motor. Nutzen wir diese Kraft, ",
+    "button": "um unsere Seite ein wenig zu gestalten."
+  },
+  "Step2": {
+    "title": "CSS",
+    "p1": "CSS zu schreiben war früher mühsam. Heute ist ",
+    "p1_2": "der Industriestandard.",
+    "p2": "Als Sie gerade geklickt haben, haben wir die Seite zentriert und ihr eine maximale Breite gegeben. Die Lesbarkeit hat sich sofort erhöht!",
+    "code_comment": "Inhalt kommt hierher",
+    "p3": "Wir nutzen jetzt die Kraft von Utility-Klassen. Aber was ist mit der ",
+    "button": "Typografie?"
+  },
+  "Step3": {
+    "title": "Typografie",
+    "p1": "Die Standard-Serifenschrift des Browsers strengt die Augen an. Mit dem ",
+    "p1_2": "-Modul von Next.js können wir moderne Schriftarten ohne Leistungsverlust hinzufügen.",
+    "serif": "Times New Roman (Standard)",
+    "geist": "Geist: Modern und sauber.",
+    "mono": "JetBrains Mono: Technisch und scharf.",
+    "p2": "Klicken Sie auf die Schaltflächen, um den Unterschied zu sehen. In modernen Designs wird normalerweise ",
+    "p2_2": "bevorzugt. Was ist mit unseren",
+    "button": "UI-Komponenten?"
+  },
+  "Step4": {
+    "title": "UI-Komponenten",
+    "p1": "Komplexe Komponenten von Grund auf neu zu entwerfen, ist Zeitverschwendung. Mit ",
+    "p1_2": "können Sie zugängliche, stilvolle und vollständig anpassbare Komponenten in Sekundenschnelle in Ihr Projekt integrieren.",
+    "html_title": "Standard-HTML-Formular:",
+    "html_card_title": "Profil",
+    "html_label": "Vollständiger Name",
+    "html_date": "Geburtsdatum",
+    "html_check": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen",
+    "html_button": "Speichern",
+    "shadcn_title": "Shadcn/UI Formular:",
+    "shadcn_card_title": "Benutzerprofil",
+    "shadcn_card_desc": "Aktualisieren Sie Ihre Informationen.",
+    "shadcn_label": "Vollständiger Name",
+    "shadcn_placeholder": "Max Mustermann",
+    "shadcn_date": "Geburtsdatum",
+    "shadcn_date_placeholder": "Datum auswählen",
+    "shadcn_check": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen",
+    "shadcn_button": "Speichern",
+    "p2": "Der Unterschied ist offensichtlich! Außerdem sind Barrierefreiheit (a11y) und Tastaturnavigation ein Bonus. Fügen wir nun etwas ",
+    "button": "Atmosphäre hinzu."
+  },
+  "Step5": {
+    "title": "Thema",
+    "p1": "Der Dark Mode ist kein Luxus mehr, er ist ein Standard. Ihn mit ",
+    "p1_2": "in das System zu integrieren, erfordert nur wenige Codezeilen.",
+    "theme_title": "Thema umschalten",
+    "theme_current": "Aktuelles Thema:",
+    "dark": "Dunkel",
+    "light": "Hell",
+    "p2": "Alles, was noch fehlt, ist ein wenig ",
+    "button": "die Zukunft berühren."
+  },
+  "Step6": {
+    "title": "Künstliche Intelligenz",
+    "description": "Unsere Programmiergewohnheiten ändern sich; anstatt jede Zeile manuell einzugeben, entwerfen wir jetzt lebendige Schnittstellen, indem wir der künstlichen Intelligenz die richtigen Anweisungen geben.",
+    "placeholder": "Frag mich alles...",
+    "search": "Suche",
+    "prompt": "Füge einen minimalistischen Sticky-Header mit dem shadcn/ui Navigation Menu hinzu. Platziere das ViraStack-Logo und den Namen auf der linken Seite. Daneben füge 'Ömer Gülçiçek' als Dropdown-Trigger für persönliche Links hinzu. Animiere den Header so, dass er beim Eintritt mit einem Framer Motion Spring-Effekt nach unten gleitet.",
+    "p2": "Die Schnittstellen der Zukunft sind nicht mehr statisch, sondern intelligent und interaktiv. Alles sieht toll aus! ",
+    "button": "Lass uns das Ergebnis überprüfen."
+  },
+  "Step7": {
+    "title": "Herzlichen Glückwunsch! 🎉",
+    "p1": "Von einer statischen Struktur; wir haben mit der Kraft von Next.js, der Geschwindigkeit von Tailwind 4 und einer AI-Native-Architektur eine lebendige, moderne Erfahrung erreicht.",
+    "virastack_subtitle": "Hochleistungs-Frontend-Tools",
+    "virastack_desc": "Ich habe das ViraStack-Ökosystem geschaffen, damit Sie all diese modernen Standards sofort in Ihre Projekte integrieren können. Anstatt von vorne anzufangen, bringen Sie Ihren Entwicklungsprozess mit Open-Source-Tools auf die nächste Stufe.",
+    "virastack_star": "Sie können die Projekte unterstützen, indem Sie ihnen auf GitHub einen Stern (⭐) geben!",
+    "nextjs_desc": "Produktionsbereites Next.js 16+ Starter-Template, erstellt mit Tailwind CSS 4 und TypeScript.",
+    "ai_rules_desc": "AI-natives Architektur-Kit und hochdisziplinierte Protokolle für moderne React-Anwendungen.",
+    "password_desc": "Vollständig zugänglicher und hochgradig anpassbarer Passwort-Sichtbarkeits-Hook für React.",
+    "input_mask_desc": "Leichtgewichtige, abhängigkeitsfreie Eingabemaskierungsbibliothek, optimiert für React Hook Form.",
+    "author_title": "👨‍💻 Ömer Gülçiçek",
+    "follow_github": "Auf GitHub folgen",
+    "share_twitter": "Auf Twitter teilen",
+    "share_linkedin": "Auf LinkedIn teilen",
+    "share_text": "Lerne Modernes Web in 3 Minuten!"
+  },
+  "LanguageSwitcher": {
+    "tr": "🇹🇷 Türkçe",
+    "en": "🇬🇧 English",
+    "es": "🇪🇸 Español",
+    "de": "🇩🇪 Deutsch",
+    "pt": "🇵🇹 Português"
+  }
+}

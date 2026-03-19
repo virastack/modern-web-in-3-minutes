@@ -1,0 +1,106 @@
+{
+  "Metadata": {
+    "title": "Web Moderna em 3 Minutos",
+    "description": "Aprenda os fundamentos do web design moderno passo a passo."
+  },
+  "Step0": {
+    "title": "O Conteúdo é Tudo",
+    "p1": "Tudo começa com o conteúdo. Seja um produto ou um portfólio; o único propósito do design é apresentar o conteúdo da melhor maneira possível.",
+    "p2": "Mais de 90% da web é texto. Então, para embelezar este texto bruto, qual é ",
+    "button": "a primeira coisa a trabalhar?"
+  },
+  "Step1": {
+    "title": "O Motor",
+    "p1": "No passado, a web era apenas HTML e CSS. Hoje, a base da web moderna é ",
+    "and": "e",
+    "alt": "Alternativamente, ",
+    "alt2": "também é uma ótima escolha",
+    "p2": "Embora você veja esta página como HTML puro agora, há um motor poderoso rodando em segundo plano. Agora, usando esse poder, ",
+    "button": "vamos estilizar um pouco nossa página."
+  },
+  "Step2": {
+    "title": "CSS",
+    "p1": "Escrever CSS costumava ser tedioso. Hoje, ",
+    "p1_2": "é o padrão da indústria.",
+    "p2": "Quando você acabou de clicar, centralizamos a página e demos a ela uma largura máxima. A legibilidade aumentou instantaneamente!",
+    "code_comment": "O conteúdo vai aqui",
+    "p3": "Agora estamos usando o poder das classes utilitárias. Mas e a ",
+    "button": "tipografia?"
+  },
+  "Step3": {
+    "title": "Tipografia",
+    "p1": "A fonte serif padrão do navegador cansa os olhos. Com o módulo ",
+    "p1_2": "do Next.js, podemos adicionar fontes modernas com perda zero de desempenho.",
+    "serif": "Times New Roman (Padrão)",
+    "geist": "Geist: Moderno e limpo.",
+    "mono": "JetBrains Mono: Técnico e nítido.",
+    "p2": "Clique nos botões para ver a diferença. Em designs modernos, ",
+    "p2_2": "geralmente é preferido. E os nossos",
+    "button": "componentes de interface do usuário?"
+  },
+  "Step4": {
+    "title": "Componentes UI",
+    "p1": "Projetar componentes complexos do zero é perda de tempo. Com ",
+    "p1_2": ", você pode incluir componentes acessíveis, elegantes e totalmente personalizáveis em seu projeto em segundos.",
+    "html_title": "Formulário HTML Padrão:",
+    "html_card_title": "Perfil",
+    "html_label": "Nome Completo",
+    "html_date": "Data de Nascimento",
+    "html_check": "Eu aceito os termos e condições",
+    "html_button": "Salvar",
+    "shadcn_title": "Formulário Shadcn/UI:",
+    "shadcn_card_title": "Perfil de Usuário",
+    "shadcn_card_desc": "Atualize suas informações.",
+    "shadcn_label": "Nome Completo",
+    "shadcn_placeholder": "João Silva",
+    "shadcn_date": "Data de Nascimento",
+    "shadcn_date_placeholder": "Escolha uma data",
+    "shadcn_check": "Eu aceito os termos e condições",
+    "shadcn_button": "Salvar",
+    "p2": "A diferença é óbvia! Além disso, acessibilidade (a11y) e navegação por teclado são um bônus. Agora vamos adicionar um pouco de ",
+    "button": "atmosfera."
+  },
+  "Step5": {
+    "title": "Tema",
+    "p1": "O Modo Escuro não é mais um luxo, é um padrão. Integrá-lo ao sistema com ",
+    "p1_2": "leva apenas algumas linhas de código.",
+    "theme_title": "Alternar Tema",
+    "theme_current": "Tema atual:",
+    "dark": "Escuro",
+    "light": "Claro",
+    "p2": "Tudo o que resta é um pouco de ",
+    "button": "tocar o futuro."
+  },
+  "Step6": {
+    "title": "Inteligência Artificial",
+    "description": "Nossos hábitos de programação estão mudando; em vez de inserir cada linha manualmente, agora projetamos interfaces vivas dando as diretrizes certas à inteligência artificial.",
+    "placeholder": "Pergunte-me qualquer coisa...",
+    "search": "Pesquisar",
+    "prompt": "Adicione um cabeçalho fixo minimalista usando o shadcn/ui Navigation Menu. Coloque o logotipo e o nome do ViraStack à esquerda. Ao lado, adicione 'Ömer Gülçiçek' como um gatilho de menu suspenso para links pessoais. Anime o cabeçalho para deslizar para baixo com um efeito de mola Framer Motion na entrada.",
+    "p2": "As interfaces do futuro não são mais estáticas, mas inteligentes e interativas. Tudo parece ótimo! ",
+    "button": "Vamos verificar o resultado."
+  },
+  "Step7": {
+    "title": "Parabéns! 🎉",
+    "p1": "De uma estrutura estática; alcançamos uma experiência viva e moderna com o poder do Next.js, a velocidade do Tailwind 4 e uma arquitetura AI-Native.",
+    "virastack_subtitle": "Ferramentas Frontend de Alto Desempenho",
+    "virastack_desc": "Criei o ecossistema ViraStack para que você possa integrar instantaneamente todos esses padrões modernos em seus projetos. Em vez de começar do zero, leve seu processo de desenvolvimento para o próximo nível com ferramentas de código aberto.",
+    "virastack_star": "Você pode apoiar os projetos dando-lhes uma estrela (⭐) no GitHub!",
+    "nextjs_desc": "Modelo inicial Next.js 16+ pronto para produção, construído com Tailwind CSS 4 e TypeScript.",
+    "ai_rules_desc": "Kit de arquitetura nativa de IA e protocolos de alta disciplina para aplicações React modernas.",
+    "password_desc": "Hook de visibilidade de senha totalmente acessível e altamente personalizável para React.",
+    "input_mask_desc": "Biblioteca de mascaramento de entrada leve e sem dependências, otimizada para React Hook Form.",
+    "author_title": "👨‍💻 Ömer Gülçiçek",
+    "follow_github": "Siga no GitHub",
+    "share_twitter": "Compartilhar no Twitter",
+    "share_linkedin": "Compartilhar no LinkedIn",
+    "share_text": "Aprenda Web Moderna em 3 Minutos!"
+  },
+  "LanguageSwitcher": {
+    "tr": "🇹🇷 Türkçe",
+    "en": "🇬🇧 English",
+    "es": "🇪🇸 Español",
+    "de": "🇩🇪 Deutsch",
+    "pt": "🇵🇹 Português"
+  }
+}

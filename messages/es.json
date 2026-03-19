@@ -6,41 +6,44 @@
   "Step0": {
     "title": "El Contenido lo es Todo",
     "p1": "Todo comienza con el contenido. Ya sea un producto o un portafolio; el único propósito del diseño es presentar el contenido de la mejor manera posible.",
-    "p2": "Más del 90% de la web es texto. Entonces, para embellecer este texto sin formato, ¿cuál es",
+    "p2": "Más del 90% de la web es texto. Entonces, para embellecer este texto sin formato, ¿cuál es ",
     "button": "lo primero en lo que trabajar?"
   },
   "Step1": {
     "title": "El Motor",
-    "p1": "En el pasado, la web era solo HTML y CSS. Hoy en día, la base de la web moderna es",
+    "p1": "En el pasado, la web era solo HTML y CSS. Hoy en día, la base de la web moderna es ",
     "and": "y",
-    "alt": "Alternativamente,",
+    "alt": "Alternativamente, ",
     "alt2": "también es una gran opción",
-    "p2": "Aunque ves esta página como HTML puro en este momento, hay un potente motor funcionando en segundo plano. Ahora, usando este poder,",
+    "p2": "Aunque ves esta página como HTML puro en este momento, hay un potente motor funcionando en segundo plano. Ahora, usando este poder, ",
     "button": "vamos a darle un poco de estilo a nuestra página."
   },
   "Step2": {
     "title": "CSS",
-    "p1": "Escribir CSS solía ser tedioso. Hoy,",
+    "p1": "Escribir CSS solía ser tedioso. Hoy, ",
     "p1_2": "es el estándar de la industria.",
     "p2": "Cuando acabas de hacer clic, centramos la página y le dimos un ancho máximo. ¡La legibilidad aumentó al instante!",
     "code_comment": "El contenido va aquí",
-    "p3": "Ahora estamos usando el poder de las clases de utilidad. Pero ¿qué pasa con la",
+    "p3": "Ahora estamos usando el poder de las clases de utilidad. Pero ¿qué pasa con la ",
     "button": "tipografía?"
   },
   "Step3": {
     "title": "Tipografía",
-    "p1": "La fuente serif predeterminada del navegador cansa la vista. Con el módulo",
+    "p1": "La fuente serif predeterminada del navegador cansa la vista. Con el módulo ",
     "p1_2": "de Next.js, podemos agregar fuentes modernas con cero pérdida de rendimiento.",
     "serif": "Times New Roman (Predeterminado)",
-    "p2": "Haz clic en los botones para ver la diferencia. En los diseños modernos, generalmente se prefiere",
+    "geist": "Geist: Moderno y limpio.",
+    "mono": "JetBrains Mono: Técnico y nítido.",
+    "p2": "Haz clic en los botones para ver la diferencia. En los diseños modernos, generalmente se prefiere ",
     "p2_2": ". ¿Qué pasa con nuestros",
     "button": "componentes de interfaz de usuario?"
   },
   "Step4": {
     "title": "Componentes UI",
-    "p1": "Diseñar componentes complejos desde cero es una pérdida de tiempo. Con",
+    "p1": "Diseñar componentes complejos desde cero es una pérdida de tiempo. Con ",
     "p1_2": ", puedes incluir componentes accesibles, elegantes y totalmente personalizables en tu proyecto en segundos.",
     "html_title": "Formulario HTML Estándar:",
+    "html_card_title": "Perfil",
     "html_label": "Nombre Completo",
     "html_date": "Fecha de Nacimiento",
     "html_check": "Acepto los términos y condiciones",
@@ -54,33 +57,34 @@
     "shadcn_date_placeholder": "Seleccionar fecha",
     "shadcn_check": "Acepto los términos y condiciones",
     "shadcn_button": "Guardar",
-    "p2": "¡La diferencia es obvia! Además, la accesibilidad (a11y) y la navegación por teclado son una ventaja. Ahora agreguemos algo de",
+    "p2": "¡La diferencia es obvia! Además, la accesibilidad (a11y) y la navegación por teclado son una ventaja. Ahora agreguemos algo de ",
     "button": "atmósfera."
   },
   "Step5": {
     "title": "Tema",
-    "p1": "El Modo Oscuro ya no es un lujo, es un estándar. Integrarlo en el sistema con",
+    "p1": "El Modo Oscuro ya no es un lujo, es un estándar. Integrarlo en el sistema con ",
     "p1_2": "toma solo unas pocas líneas de código.",
     "theme_title": "Cambiar Tema",
     "theme_current": "Tema actual:",
     "dark": "Oscuro",
     "light": "Claro",
-    "p2": "Todo lo que queda es un poco de",
-    "button": "pulido."
+    "p2": "Todo lo que queda es un poco de ",
+    "button": "tocar el futuro."
   },
   "Step6": {
     "title": "Inteligencia Artificial",
     "description": "Nuestros hábitos de programación están cambiando; en lugar de ingresar cada línea manualmente, ahora diseñamos interfaces vivas dando las directivas correctas a la inteligencia artificial.",
     "placeholder": "Pregúntame cualquier cosa...",
     "search": "Buscar",
+    "prompt": "Agrega un encabezado adhesivo minimalista usando shadcn/ui Navigation Menu. Coloca el logotipo y el nombre de ViraStack a la izquierda. Junto a él, agrega 'Ömer Gülçiçek' como activador de menú desplegable para enlaces personales. Anima el encabezado para que se deslice hacia abajo con un efecto de resorte de Framer Motion al entrar.",
     "p2": "Las interfaces del futuro ya no son estáticas, sino inteligentes e interactivas. ¡Todo se ve genial! ",
     "button": "Veamos el resultado."
   },
   "Step7": {
     "title": "¡Felicidades! 🎉",
-    "p1": "En poco tiempo, pasamos de una página HTML sin estilos a una aplicación web moderna y accesible. Alcanzar estos estándares es ahora una necesidad en la web moderna.",
+    "p1": "De una estructura estática; hemos alcanzado una experiencia viva y moderna con el poder de Next.js, la velocidad de Tailwind 4 y una arquitectura AI-Native.",
     "virastack_subtitle": "Herramientas Frontend de Alto Rendimiento",
-    "virastack_desc": "Desarrollé el ecosistema ViraStack para que puedas integrar instantáneamente lo que has aprendido en tus proyectos. En lugar de empezar desde cero, puedes usar estas herramientas de código abierto probadas.",
+    "virastack_desc": "Creé el ecosistema ViraStack para que puedas integrar instantáneamente todos estos estándares modernos en tus proyectos. En lugar de empezar desde cero, lleva tu proceso de desarrollo al siguiente nivel con herramientas de código abierto.",
     "virastack_star": "¡Puedes apoyar los proyectos dándoles una estrella (⭐) en GitHub!",
     "nextjs_desc": "Plantilla de inicio de Next.js 16+ lista para producción, creada con Tailwind CSS 4 y TypeScript.",
     "ai_rules_desc": "Kit de arquitectura nativa de IA y protocolos de alta disciplina para aplicaciones React modernas.",
@@ -95,6 +99,8 @@
   "LanguageSwitcher": {
     "tr": "🇹🇷 Türkçe",
     "en": "🇬🇧 English",
-    "es": "🇪🇸 Español"
+    "es": "🇪🇸 Español",
+    "de": "🇩🇪 Deutsch",
+    "pt": "🇵🇹 Português"
   }
 }

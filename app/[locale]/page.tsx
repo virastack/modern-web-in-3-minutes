@@ -34,10 +34,11 @@ export default function Home() {
       }
 
       setTimeout(() => {
-        window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior: "smooth",
-        });
+        const element = document.getElementById(`step-${next}`);
+        if (element) {
+          const y = element.getBoundingClientRect().top + window.scrollY - 100;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
       }, 100);
     }
   };
@@ -72,15 +73,17 @@ export default function Home() {
 
   return (
     <main className={`min-h-screen transition-all ${containerClass}`}>
-      {/* <LanguageSwitcher /> */}
-      <div className="flex flex-col gap-12 pb-24">
+      <LanguageSwitcher />
+      <div className="flex flex-col gap-6">
         <AnimatePresence>
           {steps.slice(0, currentStep + 1).map((step, index) => (
             <motion.div
               key={index}
+              id={`step-${index}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
+              className="flex flex-col justify-center"
             >
               {step}
             </motion.div>

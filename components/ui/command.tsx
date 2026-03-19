@@ -121,10 +121,10 @@ function CommandDialog({
 }
 
 interface CommandInputProps
-  extends Omit<TextFieldProps, "children">,
-    Omit<React.ComponentProps<typeof Input>, "className"> {
+  extends Omit<TextFieldProps, "children"> {
   inputClassName?: string
   wrapperClassName?: string
+  placeholder?: string
 }
 
 function CommandInput({

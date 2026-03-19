@@ -42,13 +42,11 @@ export default function Step7Final() {
   }, []);
 
   return (
-    <section className="space-y-8 pb-12">
-      <hr className="my-10 border-gray-300 dark:border-gray-700" />
-
-      <div className="space-y-4">
-        <h2 className="text-3xl font-bold">{t("title")}</h2>
-        <p className="text-lg text-muted-foreground">{t("p1")}</p>
-      </div>
+    <section className="space-y-4">
+      <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+        {t("title")}
+      </h2>
+      <p className="text-lg text-muted-foreground">{t("p1")}</p>
 
       <div className="p-6 border rounded-xl bg-card space-y-6">
         <div className="flex items-center gap-4 border-b pb-4">
@@ -76,9 +74,11 @@ export default function Step7Final() {
           </div>
         </div>
 
-        <p className="text-base">
+        <p className="text-lg text-muted-foreground">
           {t("virastack_desc")}
-          <strong className="block mt-2">{t("virastack_star")}</strong>
+          <strong className="block mt-2 text-primary">
+            {t("virastack_star")}
+          </strong>
         </p>
 
         <div className="grid gap-4 sm:grid-cols-2">
@@ -142,48 +142,6 @@ export default function Step7Final() {
             <p className="text-sm text-muted-foreground">
               {t("password_desc")}
             </p>
-          </a>
-        </div>
-      </div>
-
-      <div className="flex flex-col items-center justify-center text-center space-y-6 pt-8">
-        <div className="space-y-2">
-          <h3 className="text-xl font-bold">{t("author_title")}</h3>
-        </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="https://github.com/omergulcicek"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(buttonVariants({ variant: "outline" }), "gap-2")}
-          >
-            <Github className="w-4 h-4" />
-            {t("follow_github")}
-          </a>
-          <a
-            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(t("share_text"))}&url=https://github.com/omergulcicek/modern-web-in-3-minutes`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              buttonVariants({ variant: "outline" }),
-              "gap-2 text-[#1DA1F2] hover:text-[#1DA1F2]",
-            )}
-          >
-            <Twitter className="w-4 h-4" />
-            {t("share_twitter")}
-          </a>
-          <a
-            href="https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/omergulcicek/modern-web-in-3-minutes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              buttonVariants({ variant: "outline" }),
-              "gap-2 text-[#0A66C2] hover:text-[#0A66C2]",
-            )}
-          >
-            <Linkedin className="w-4 h-4" />
-            {t("share_linkedin")}
           </a>
         </div>
       </div>

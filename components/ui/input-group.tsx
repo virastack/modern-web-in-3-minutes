@@ -113,7 +113,9 @@ function InputGroupButton({
       type={type}
       data-size={size}
       variant={variant}
-      className={inputGroupButtonVariants({ size, className })}
+      className={composeRenderProps(className, (className) =>
+        inputGroupButtonVariants({ size, className })
+      )}
       {...props}
     />
   )

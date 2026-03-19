@@ -15,16 +15,17 @@ export default function Step3Typography({ onNext, isCompleted }: StepProps) {
   const p2Suffix = t("p2_2").trim();
 
   return (
-    <section className="space-y-4">
-      <hr className="my-10 border-gray-300 dark:border-gray-700" />
-      <h2 className="text-3xl font-bold mb-6">{t("title")}</h2>
-      <p className="text-base">
+    <section className="space-y-4 mb-20">
+      <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+        {t("title")}
+      </h2>
+      <p className="text-lg text-muted-foreground">
         {t("p1")}{" "}
         <a
           href="https://nextjs.org/docs/app/getting-started/fonts"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold underline hover:text-blue-600 transition-colors"
+          className="underline text-primary hover:text-primary/80 transition-colors"
         >
           next/font
         </a>{" "}
@@ -46,7 +47,7 @@ export default function Step3Typography({ onNext, isCompleted }: StepProps) {
           className="font-geist"
           onClick={() => setFont("geist")}
         >
-          {locale === "tr" ? t("geist") : "Geist"}
+          {t("geist")}
         </Button>
         <Button
           size="sm"
@@ -54,11 +55,11 @@ export default function Step3Typography({ onNext, isCompleted }: StepProps) {
           className="font-mono"
           onClick={() => setFont("mono")}
         >
-          {locale === "tr" ? t("mono") : "JetBrains Mono"}
+          {t("mono")}
         </Button>
       </div>
 
-      <p className="text-base">
+      <p className="text-lg text-muted-foreground">
         {t("p2")}
         {p2Suffix ? (
           <>
@@ -68,7 +69,11 @@ export default function Step3Typography({ onNext, isCompleted }: StepProps) {
         ) : null}
         <span
           onClick={!isCompleted ? onNext : undefined}
-          className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}
+          className={cn(
+            isCompleted
+              ? "cursor-default"
+              : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800",
+          )}
         >
           {t("button")}
         </span>

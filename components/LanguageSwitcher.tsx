@@ -9,37 +9,46 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useTransition } from "react";
-import { setLocale } from "@/app/actions";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function LanguageSwitcher() {
   const t = useTranslations("LanguageSwitcher");
   const locale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
 
   const onSelectChange = (nextLocale: string | null) => {
     if (!nextLocale) return;
-    startTransition(async () => {
-      await setLocale(nextLocale);
-      router.refresh();
+    startTransition(() => {
+      // Replace the current locale in the pathname with the new one
+      const newPathname = pathname.replace(`/${locale}`, `/${nextLocale}`);
+      router.push(newPathname);
     });
   };
 
   return (
     <div className="fixed top-4 right-4 z-50">
-      <Select defaultValue={locale} onValueChange={onSelectChange} disabled={isPending}>
+      <Select
+        defaultValue={locale}
+        onValueChange={onSelectChange}
+        disabled={isPending}
+      >
         <SelectTrigger className="w-[140px] bg-background">
           <SelectValue placeholder="Dil Seçin">
-            {locale === "tr" && t("tr")}
+            {locale === "de" && t("de")}
             {locale === "en" && t("en")}
             {locale === "es" && t("es")}
+            {locale === "pt" && t("pt")}
+            {locale === "tr" && t("tr")}
           </SelectValue>
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="tr">{t("tr")}</SelectItem>
+          <SelectItem value="de">{t("de")}</SelectItem>
           <SelectItem value="en">{t("en")}</SelectItem>
           <SelectItem value="es">{t("es")}</SelectItem>
+          <SelectItem value="pt">{t("pt")}</SelectItem>
+          <SelectItem value="tr">{t("tr")}</SelectItem>
         </SelectContent>
       </Select>
     </div>

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { MicIcon } from "lucide-react";
+import { useHeader } from "@/app/providers";
 
 import {
   PromptInput,
@@ -32,10 +33,12 @@ const models = [
 export default function Step6AI({ onNext, isCompleted }: StepProps) {
   const [text, setText] = useState("");
   const [model, setModel] = useState("auto");
+  const [isSelectOpen, setIsSelectOpen] = useState(false);
   const [status, setStatus] = useState<"ready" | "submitted" | "streaming">(
     "ready",
   );
   const t = useTranslations("Step6");
+  const { setShowHeader } = useHeader();
 
   const handleSubmit = (message: { text?: string; files?: unknown[] }) => {
     if (!message.text?.trim() && !message.files?.length) {
@@ -45,16 +48,15 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
     setStatus("submitted");
     setTimeout(() => {
       setStatus("streaming");
+      setShowHeader(true);
       setTimeout(() => {
         setStatus("ready");
-        setText("");
-      }, 2000);
+      }, 1500);
     }, 1000);
   };
 
   useEffect(() => {
-    const promptToType =
-      "Add a modern sticky header using shadcn/ui Navigation Menu. Include the ViraStack logo, a dropdown for 'Resources' (linking to GitHub), and a 'Restart' button. Add a GitHub icon at the end. Animate the entire header to slide down with a smooth spring effect using Framer Motion.";
+    const promptToType = t("prompt");
     let currentIndex = 0;
     const interval = setInterval(() => {
       if (currentIndex <= promptToType.length) {
@@ -62,9 +64,19 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
         currentIndex++;
       } else {
         clearInterval(interval);
+
         setTimeout(() => {
-          handleSubmit({ text: promptToType });
-        }, 200);
+          setIsSelectOpen(true);
+
+          setTimeout(() => {
+            setModel("gemini");
+            setIsSelectOpen(false);
+
+            setTimeout(() => {
+              handleSubmit({ text: promptToType });
+            }, 500);
+          }, 1000);
+        }, 500);
       }
     }, 20);
 
@@ -73,13 +85,18 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
   }, []);
 
   return (
-    <section className="space-y-4">
-      <hr className="my-10 border-gray-300 dark:border-gray-700" />
-      <h2 className="text-3xl font-bold mb-6">{t("title")}</h2>
-      <p className="text-base">{t("description")}</p>
+    <section className="space-y-4 mb-20">
+      <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+        {t("title")}
+      </h2>
+      <p className="text-lg text-muted-foreground">{t("description")}</p>
 
       <div className="my-6 p-6 border rounded-lg overflow-hidden relative bg-card">
-        <PromptInput onSubmit={handleSubmit} className="relative">
+        <PromptInput
+          onSubmit={handleSubmit}
+          className="relative"
+          disableResetOnSubmit
+        >
           <PromptInputBody>
             <PromptInputTextarea
               onChange={(e) => setText(e.target.value)}
@@ -90,13 +107,14 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
           <PromptInputFooter>
             <PromptInputTools>
               <PromptInputButton
-                variant="ghost"
                 type="button"
-                className="cursor-default hover:bg-transparent hover:text-inherit"
+                className="cursor-pointer hover:bg-transparent hover:text-inherit"
               >
                 <MicIcon className="size-4" />
               </PromptInputButton>
               <PromptInputModelSelect
+                isOpen={isSelectOpen}
+                onOpenChange={setIsSelectOpen}
                 selectedKey={model}
                 onSelectionChange={(key) => setModel(key as string)}
                 items={models}
@@ -109,6 +127,7 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
               </PromptInputModelSelect>
             </PromptInputTools>
             <PromptInputSubmit
+              className="cursor-pointer"
               isDisabled={!text && status === "ready"}
               status={status}
             />
@@ -116,8 +135,9 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
         </PromptInput>
       </div>
 
-      <p className="text-base mt-6">
-        {t("p2")}{" "}
+      <p className="text-lg text-muted-foreground mt-6">
+        {t("p2")}
+        <br />
         <span
           onClick={!isCompleted ? onNext : undefined}
           className={cn(

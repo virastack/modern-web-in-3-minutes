@@ -37,19 +37,18 @@ export default function Step4UIComponents({ onNext, isCompleted }: StepProps) {
   const dateLocale = locale === "tr" ? tr : enUS;
 
   return (
-    <section className="space-y-4">
-      <hr className="my-10 border-gray-300 dark:border-gray-700" />
+    <section className="space-y-4 mb-20">
       <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
         {t("title")}{" "}
         <ShadcnIcon className="w-8 h-8 bg-black dark:invert rounded-xs p-1" />
       </h2>
-      <p className="text-base">
+      <p className="text-lg text-muted-foreground">
         {t("p1")}{" "}
         <a
           href="https://ui.shadcn.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold underline hover:text-blue-600 transition-colors"
+          className="underline text-primary hover:text-primary/80 transition-colors"
         >
           shadcn/ui
         </a>{" "}
@@ -62,7 +61,7 @@ export default function Step4UIComponents({ onNext, isCompleted }: StepProps) {
           <p className="text-sm text-gray-500 font-medium">{t("html_title")}</p>
 
           <div className="flex flex-col gap-4 p-4 border border-gray-300 bg-white text-black">
-            <h3 className="font-bold m-0">Profil</h3>
+            <h3 className="font-bold m-0">{t("html_card_title")}</h3>
 
             <div className="flex flex-col gap-1">
               <label htmlFor="native-name" className="text-sm">
@@ -160,11 +159,15 @@ export default function Step4UIComponents({ onNext, isCompleted }: StepProps) {
         </div>
       </div>
 
-      <p className="text-base mt-6 whitespace-pre-wrap">
+      <p className="text-lg text-muted-foreground mt-6 whitespace-pre-wrap">
         {t("p2")}{" "}
         <span
           onClick={!isCompleted ? onNext : undefined}
-          className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}
+          className={cn(
+            isCompleted
+              ? "cursor-default"
+              : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800",
+          )}
         >
           {t("button")}
         </span>

@@ -20,31 +20,58 @@ export default function Step5Atmosphere({ onNext, isCompleted }: StepProps) {
   }, []);
 
   return (
-    <section className="space-y-4">
-      <hr className="my-10 border-gray-300 dark:border-gray-700" />
-      <h2 className="text-3xl font-bold mb-6">{t("title")}</h2>
-      <p className="text-base">
-        {t("p1")} <a href="https://github.com/pacocoursey/next-themes" target="_blank" rel="noopener noreferrer" className="font-semibold underline hover:text-blue-600 transition-colors">next-themes</a> {t("p1_2")}
+    <section className="space-y-4 mb-20">
+      <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+        {t("title")}
+      </h2>
+      <p className="text-lg text-muted-foreground">
+        {t("p1")}{" "}
+        <a
+          href="https://github.com/pacocoursey/next-themes"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-primary hover:text-primary/80 transition-colors"
+        >
+          next-themes
+        </a>{" "}
+        {t("p1_2")}
       </p>
 
       {mounted && (
         <div className="my-6 p-6 border rounded-lg flex items-center justify-between bg-card text-card-foreground">
           <div>
             <h3 className="text-xl font-semibold">{t("theme_title")}</h3>
-            <p className="text-sm text-muted-foreground mt-1">{t("theme_current")} {theme === 'dark' ? t("dark") : t("light")}</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              {t("theme_current")} {theme === "dark" ? t("dark") : t("light")}
+            </p>
           </div>
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             size="icon"
+            className="cursor-pointer"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
-            {theme === "dark" ? <Sun className="h-[1.2rem] w-[1.2rem]" /> : <Moon className="h-[1.2rem] w-[1.2rem]" />}
+            {theme === "dark" ? (
+              <Sun className="h-4 w-4" />
+            ) : (
+              <Moon className="h-4 w-4" />
+            )}
           </Button>
         </div>
       )}
 
-      <p className="text-base mt-6">
-        {t("p2")} <span onClick={!isCompleted ? onNext : undefined} className={cn(isCompleted ? "cursor-default" : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800")}>{t("button")}</span>
+      <p className="text-lg text-muted-foreground mt-6">
+        {t("p2")}{" "}
+        <span
+          onClick={!isCompleted ? onNext : undefined}
+          className={cn(
+            isCompleted
+              ? "cursor-default"
+              : "underline underline-offset-2 cursor-pointer text-blue-600 hover:text-blue-800",
+          )}
+        >
+          {t("button")}
+        </span>
       </p>
     </section>
   );

@@ -8,6 +8,8 @@ type FontType = "serif" | "geist" | "mono";
 interface FontContextType {
   font: FontType;
   setFont: (font: FontType) => void;
+  showHeader: boolean;
+  setShowHeader: (show: boolean) => void;
 }
 
 const FontContext = createContext<FontContextType | undefined>(undefined);
@@ -20,8 +22,20 @@ export function useFont() {
   return context;
 }
 
+export function useHeader() {
+  const context = useContext(FontContext);
+  if (!context) {
+    throw new Error("useHeader must be used within a FontProvider");
+  }
+  return {
+    showHeader: context.showHeader,
+    setShowHeader: context.setShowHeader,
+  };
+}
+
 export function Providers({ children }: { children: ReactNode }) {
   const [font, setFont] = useState<FontType>("serif");
+  const [showHeader, setShowHeader] = useState(false);
 
   const fontStyle = {
     serif: { fontFamily: '"Times New Roman", Times, serif' },
@@ -31,7 +45,7 @@ export function Providers({ children }: { children: ReactNode }) {
 
   return (
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-      <FontContext.Provider value={{ font, setFont }}>
+      <FontContext.Provider value={{ font, setFont, showHeader, setShowHeader }}>
         <div style={fontStyle} className="transition-all duration-150">
           {children}
         </div>

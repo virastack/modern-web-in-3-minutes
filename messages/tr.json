@@ -20,8 +20,8 @@
   },
   "Step2": {
     "title": "CSS",
-    "p1": "Geçmişte CSS yazmak zahmetliydi; bugün ",
-    "p1_2": "endüstri standardı.",
+    "p1": "Geleneksel CSS'in yerini alan ",
+    "p1_2": ", bugün ölçeklenebilir ve yüksek performanslı arayüzler inşa etmenin endüstri standardı.",
     "p2": "Az önce tıkladığınızda sayfayı ortaladık ve içeriğe nefes aldıracak boşluklar ekledik. Okunabilirlik anında arttı!",
     "code_comment": "İçerik buraya gelecek",
     "p3": "Artık atomik sınıfların hızıyla ilerliyoruz. Peki ya ",
@@ -43,6 +43,7 @@
     "p1": "Sıfırdan karmaşık bileşenler tasarlamak artık zaman kaybı. ",
     "p1_2": "ile erişilebilir ve tamamen özelleştirilebilir bileşenleri saniyeler içinde projeye dahil ediyoruz.",
     "html_title": "Standart HTML Form",
+    "html_card_title": "Profil",
     "html_label": "Ad Soyad",
     "html_date": "Doğum Tarihi",
     "html_check": "Kullanım koşullarını kabul ediyorum",
@@ -68,21 +69,22 @@
     "dark": "Karanlık",
     "light": "Aydınlık",
     "p2": "Görünüm kusursuzlaştı. Son dokunuş: ",
-    "button": "Ruh katmak."
+    "button": "Geleceğe dokunmak."
   },
   "Step6": {
     "title": "Yapay Zekâ",
     "description": "Kod yazma alışkanlıklarımız değişiyor; artık her bir satırı elle girmek yerine, yapay zekâya doğru direktifleri vererek arayüzler tasarlıyoruz.",
     "placeholder": "Bana bir şeyler sor...",
     "search": "Ara",
+    "prompt": "shadcn/ui Navigation Menu kullanarak minimalist bir sticky header ekle. Sol tarafa ViraStack logosunu ve adını yerleştir. Yanına, kişisel bağlantılar için bir açılır menü tetikleyicisi olarak 'Ömer Gülçiçek' ekle. Header'ı sayfaya girerken Framer Motion spring efektiyle aşağı kayacak şekilde gelsin.",
     "p2": "Geleceğin arayüzleri artık statik değil, akıllı ve etkileşimli. Her şey yerli yerinde! ",
     "button": "Sonuca göz atalım."
   },
   "Step7": {
     "title": "Tebrikler! 🎉",
-    "p1": "Kısa sürede stilsiz bir HTML sayfasından modern ve erişilebilir bir web uygulamasına geçiş yaptık. Modern web'de bu standartları yakalamak artık bir zorunluluk.",
+    "p1": "Statik bir yapıdan; Next.js'in gücü, Tailwind 4'ün hızı ve AI-Native bir mimariyle yaşayan, modern bir deneyime ulaştık.",
     "virastack_subtitle": "Yüksek Performanslı Frontend Araçları",
-    "virastack_desc": "Öğrendiklerinizi projelerinize anında entegre edebilmeniz için ViraStack ekosistemini geliştirdim. Sıfırdan başlamak yerine, test edilmiş bu açık kaynak araçları kullanabilirsiniz.",
+    "virastack_desc": "Tüm bu modern standartları projelerinize anında entegre etmeniz için ViraStack ekosistemini oluşturdum. Sıfırdan başlamak yerine, açık kaynak araçlarla geliştirme sürecinizi bir üst seviyeye taşıyın.",
     "virastack_star": "Projelere GitHub'da yıldız (⭐) vererek destek olabilirsiniz!",
     "nextjs_desc": "Tailwind CSS 4 ve TypeScript ile geliştirilmiş, üretime hazır Next.js 16+ başlangıç şablonu.",
     "ai_rules_desc": "Modern React uygulamaları için yapay zeka odaklı mimari kiti ve yüksek disiplinli protokoller.",
@@ -97,6 +99,8 @@
   "LanguageSwitcher": {
     "tr": "🇹🇷 Türkçe",
     "en": "🇬🇧 English",
-    "es": "🇪🇸 Español"
+    "es": "🇪🇸 Español",
+    "de": "🇩🇪 Deutsch",
+    "pt": "🇵🇹 Português"
   }
 }
