@@ -55,9 +55,7 @@ export default function Step6AI({ onNext, isCompleted }: StepProps) {
     <section className="space-y-4">
       <hr className="my-10 border-gray-300 dark:border-gray-700" />
       <h2 className="text-3xl font-bold mb-6">{t("title")}</h2>
-      <p className="text-base">
-        {t("description")}
-      </p>
+      <p className="text-base">{t("description")}</p>
 
       <div className="my-6 p-6 border rounded-lg overflow-hidden relative bg-card">
         <PromptInput onSubmit={handleSubmit} className="relative">
