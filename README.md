@@ -18,6 +18,8 @@
 
 An interactive, step-by-step journey demonstrating how modern web applications are built. From raw HTML to a fully styled, accessible, and AI-native experience using Next.js, Tailwind CSS 4, and shadcn/ui.
 
+**[🚀 Start Interactive Guide](https://virastack.com/modern-web-in-3-minutes)**
+
 ## Explore the ViraStack Ecosystem
 
 - [**AI Rules**](https://github.com/virastack/ai-rules) – Standardized AI rules for consistent code generation
